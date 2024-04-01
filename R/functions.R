@@ -958,7 +958,8 @@ get_co2_price_global_tmp = function() {
 
   co2_price_global_pre <<-
     rgcam::getQuery(prj, "CO2 prices") %>%
-    dplyr::filter(market == "globalCO2")
+    dplyr::filter(market %in% c("globalCO2", "ROWCO2")) %>%
+    dplyr::select(-any_of(c("region")))
 
   if(nrow(co2_price_global_pre) > 1) {
 
@@ -966,6 +967,7 @@ get_co2_price_global_tmp = function() {
       tibble::as_tibble(co2_price_global_pre) %>%
       dplyr::mutate(value = value / conv_C_CO2 * conv_90USD_10USD) %>%
       dplyr::mutate(market = gsub("global", "", market)) %>%
+      dplyr::mutate(market = gsub("ROW", "", market)) %>%
       dplyr::left_join(co2_market_frag_map, by = "market", multiple = "all") %>%
       dplyr::filter(value != 0) %>%
       tidyr::expand_grid(tibble::tibble(region = regions)) %>%
@@ -991,7 +993,8 @@ get_co2_price_fragmented_tmp = function() {
   co2_price_fragmented_pre <<-
     rgcam::getQuery(prj, "CO2 prices") %>%
     dplyr::filter(!grepl("LUC", market)) %>%
-    dplyr::filter(market != "globalCO2")
+    dplyr::filter(market != "globalCO2") %>%
+    dplyr::select(-any_of(c("region")))
 
   if(nrow(co2_price_fragmented_pre) > 1) {
 
@@ -1009,7 +1012,8 @@ get_co2_price_fragmented_tmp = function() {
     dplyr::select(-market_adj) %>%
     dplyr::left_join(co2_market_frag_map, by = "market", multiple = "all") %>%
     dplyr::filter(stats::complete.cases(.)) %>%
-    tidyr::complete(tidyr::nesting(scenario, var, year, market, Units), region = regions, fill = list(value = 0)) %>%
+    # Removed the application to all regions, since this is covered by Global
+    ##tidyr::complete(tidyr::nesting(scenario, var, year, market, Units), region = regions, fill = list(value = 0)) %>%
     dplyr::select(all_of(long_columns))
 
   } else {
@@ -1030,7 +1034,10 @@ get_co2_price_fragmented_tmp = function() {
 get_co2_price = function() {
 
   co2_price_clean_pre <<-
-    dplyr::bind_rows(co2_price_global, co2_price_fragmented)
+    dplyr::bind_rows(co2_price_fragmented,
+                     filter(co2_price_global,
+                            # remove ones that are covered by the fragmented price one
+                            !(region %in% unique(co2_price_fragmented$region))))
 
   if(nrow(co2_price_clean_pre) < 1) {
 

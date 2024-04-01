@@ -353,13 +353,13 @@ run = function(project_path = NULL, db_path = NULL, db_name = NULL, prj_name = N
   available_years <<- as.numeric(names(sdata)[13:length(names(sdata))])
 
   # develop a nested list of the variables and regions for launching the ui
-  cols <<- unique(sdata[, grepl('col', names(sdata))])
-  tree_vars <<- do_mount_tree(cols,names(cols),selec=TRUE)
+  col_columns <<- unique(sdata[, grepl('col', names(sdata))])
+  tree_vars <<- do_mount_tree(col_columns,names(col_columns),selec=TRUE)
 
   tree_reg <<- do_mount_tree(reg_cont,names(reg_cont),selec=TRUE)
 
   # save a list of all variables
-  all_vars <<- do_collapse_df(cols)
+  all_variables <<- do_collapse_df(col_columns)
 
   if (launch_ui) {
     print('Launching UI...')
