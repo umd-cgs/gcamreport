@@ -45,6 +45,8 @@ jobs:
 
       - name: Test coverage
         run: |
+          install.packages(c("covr"), repos = "https://cloud.r-project.org")
+          remotes::install_deps(dependencies = TRUE)
           cov <- covr::package_coverage()
           covr:::report(cov, file = "coverage.xml")
         shell: Rscript {0}
