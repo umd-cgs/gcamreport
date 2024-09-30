@@ -343,6 +343,37 @@ approx_fun <- function(year, value, rule = 1) {
   return(invisible(res))
 }
 
+# check for excluded and included variables -----------
+# find the unique values of x$colmn_x that are not covered in y$colmn_y,
+# unless opt is set to "i", in which case it returns the ones that are included
+check_match <- function(x, y, colmn_x, colmn_y = NULL, opt = "e") {
+
+  colmn_y <- ifelse(is.null(colmn_y), colmn_x, colmn_y)
+
+  x <- as_tibble(x)
+  y <- as_tibble(y)
+
+  loc_x <- which(names(x) == colmn_x)
+  loc_y <- which(names(y) == colmn_y)
+
+  x <- as.matrix(x)
+  y <- as.matrix(y)
+
+  val_x <- as.data.frame(x[,loc_x])
+  val_y <- as.data.frame(y[,loc_y])
+
+  if(opt == "e") {
+    excl = unique(val_x[!(val_x[,1] %in% val_y[,1]),1])
+    lst <- ifelse(length(excl) == 0, print("There are no variables in the first one that are not in the second one."),
+                  print(list("The following are in the first one, but not in the second one:", excl)))
+  }
+  if(opt == "i") {
+    incl = unique(val_x[(val_x[,1] %in% val_y[,1]),1])
+    lst <- ifelse(length(incl) == 0, print("There are no variables in the first one that are included in the second one."),
+                  print(list("The following are in both:", incl)))
+  }
+}
+
 
 #########################################################################
 #                         LOAD QUERIES FUNCTIONS                        #
