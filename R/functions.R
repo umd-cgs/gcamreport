@@ -418,7 +418,7 @@ get_gdp_ppp <- function(GCAM_version = "v7.0") {
 
   GDP_PPP_clean <<-
     rgcam::getQuery(prj, "GDP per capita PPP by region") %>%
-    dplyr::left_join_error_no_match(population_clean %>% dplyr::rename(pop_mill = value), by = c("scenario", "region", "year")) %>%
+    left_join_error_no_match(population_clean %>% dplyr::rename(pop_mill = value), by = c("scenario", "region", "year")) %>%
     dplyr::mutate(
       value = value * pop_mill * get(paste('convert',GCAM_version,sep='_'), envir = asNamespace("gcamreport"))[['conv_90USD_10USD']],      var = "GDP|PPP"
     ) %>%
@@ -1413,7 +1413,7 @@ get_iron_steel_imports <- function(GCAM_version = "v7.0") {
   iron_steel_imports <<-
     rgcam::getQuery(prj, "regional iron and steel sources") %>%
     dplyr::filter(subsector == "domestic iron and steel") %>%
-    dplyr::left_join_error_no_match(filter_variables(get(paste('iron_steel_trade_map',GCAM_version,sep='_'), envir = asNamespace("gcamreport")), "iron_steel_clean"), by = c("sector")) %>%
+    left_join_error_no_match(filter_variables(get(paste('iron_steel_trade_map',GCAM_version,sep='_'), envir = asNamespace("gcamreport")), "iron_steel_clean"), by = c("sector")) %>%
     # filter variables that are in terms of Mt
     dplyr::group_by(scenario, region, var, year) %>%
     dplyr::summarise(value = sum(value, na.rm = T)) %>%
@@ -1434,7 +1434,7 @@ get_iron_steel_exports <- function(GCAM_version = "v7.0") {
 
   iron_steel_exports <<-
     rgcam::getQuery(prj, "traded iron and steel") %>%
-    dplyr::left_join_error_no_match(filter_variables(get(paste('iron_steel_trade_map',GCAM_version,sep='_'), envir = asNamespace("gcamreport")), "iron_steel_clean"), by = c("sector")) %>%
+    left_join_error_no_match(filter_variables(get(paste('iron_steel_trade_map',GCAM_version,sep='_'), envir = asNamespace("gcamreport")), "iron_steel_clean"), by = c("sector")) %>%
     # extract region
     dplyr::mutate(region = stringr::str_replace_all(subsector, " traded iron and steel", "")) %>%
     dplyr::filter(region %in% desired_regions) %>%
