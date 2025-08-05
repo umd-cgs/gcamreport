@@ -13,7 +13,7 @@ get_expenditure(GCAM_version = "v7.1")
 `expenditure_clean` global variable.
 }
 \description{
-Computes HH and Government expenditure
+Computes food expenditure.
 }
 \keyword{economy}
 \keyword{internal}

@@ -719,6 +719,15 @@ output-primary/physical-output/node()</xPath>
   </aQuery>
    <aQuery>
       <all-regions />
+      <supplyDemandQuery title="ag regional prices (current consumer prices)">
+            <axis1 name="sector">sector</axis1>
+            <axis2 name="Year">cost</axis2>
+            <xPath buildList="true" dataName="input" group="false" sumAll="false">*[@type='sector' and contains(@name, 'regional')]/cost[@unit='1975$/kg' or @unit='1975$/m3']/text()</xPath>
+            <comments/>
+      </supplyDemandQuery>
+   </aQuery>
+   <aQuery>
+      <all-regions />
       <supplyDemandQuery title="meat and dairy production by type">
          <axis1 name="sector">sector</axis1>
          <axis2 name="Year">physical-output[@vintage]</axis2>

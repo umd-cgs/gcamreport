@@ -1122,7 +1122,7 @@ get_value_added <- function(GCAM_version = "v7.1") {
 
 #' get_expenditure
 #'
-#' Computes HH and Government expenditure
+#' Computes food expenditure.
 #'
 #' @param GCAM_version Main GCAM compatible version: 'v7.1' (default), 'v7.2', 'v7.0'.
 #' @return `expenditure_clean` global variable.
@@ -1130,133 +1130,61 @@ get_value_added <- function(GCAM_version = "v7.1") {
 #' @importFrom magrittr %>%
 #' @export
 get_expenditure <- function(GCAM_version = "v7.1") {
-  value <- expenditure_clean <- NULL
+  value <- expenditure_clean <- consumption <- prices <-
+    expenditure_food <- expenditure_food_w <- NULL
 
   check_queries('expenditure_clean', GCAM_version)
 
-  expenditure_bld <-
-    check_inf(rgcam::getQuery(prj, "building service costs"),
-              dataset_name = "building service costs") %>%
-    dplyr::filter(year <= final_year.global, year >= 1990) %>%
-    dplyr::rename(cost = value, cost_unit = Units) %>%
-    left_join_strict(check_inf(rgcam::getQuery(prj, "building total final energy by service"),
-                               dataset_name = "building total final energy by service") %>%
-                       tidyr::complete(tidyr::nesting(Units, scenario, region, sector),
-                                       year = gcam_years,
-                                       fill = list(value = 0)
-                       ) %>%
-                       # add Twn as Chn
-                       rbind(
-                         check_inf(rgcam::getQuery(prj, "building total final energy by service"),
-                                   dataset_name = "building total final energy by service") %>%
-                           dplyr::filter(region == 'China') %>%
-                           dplyr::mutate(region = 'Taiwan') %>%
-                           tidyr::complete(tidyr::nesting(Units, scenario, region, sector),
-                                           year = gcam_years,
-                                           fill = list(value = 0)
-                           )
-                       ) %>%
-                       dplyr::filter(year %in% gcam_years, year <= final_year.global) %>%
-                       dplyr::rename(demand = value, demand_unit = Units),
-                     by = c('scenario','region','sector','year')) %>%
-    dplyr::filter(var != 'NoReported', !is.na(var)) %>%
-    filter_variables() %>%
-    # from 1975$ to 2010$
-    dplyr::mutate(demand = demand * get(paste('convert',GCAM_version,sep='_'), envir = asNamespace("gcamreport"))[['GJ_to_EJ']],
-                  cost = cost * get(paste('convert',GCAM_version,sep='_'), envir = asNamespace("gcamreport"))[['conv_75USD_10USD']] / 1e9) %>%
-    dplyr::mutate(value = cost * demand) %>%
-    # remove commercial bld
-    dplyr::filter(!grepl('comm', sector)) %>%
-    # compute total HH bld expenditure
+  consumption <-
+    check_inf(rgcam::getQuery(prj, "demand balances by crop commodity"),
+              dataset_name = "demand balances by crop commodity") %>%
+    dplyr::filter(stringr::str_starts(sector, 'FoodDemand')) %>%
+    dplyr::select(-sector) %>%
+    dplyr::rename(consumption = value,
+                  sector = input) %>%
+    # Units: 1Mt = 1e9kg (units of the food price)
+    dplyr::mutate(consumption = consumption * 1e9)
+
+  prices <- check_inf(rgcam::getQuery(prj, "ag regional prices (current consumer prices)"),
+                      dataset_name = "ag regional prices (current consumer prices)") %>%
+    dplyr::rename(price = value) %>%
+    # Units: 1975$/kg to billion 2010$/kg (units of the GDP)
+    dplyr::mutate(price = 1e-9 * price / get(paste('convert',GCAM_version,sep='_'), envir = asNamespace("gcamreport"))[['conv_75USD_10USD']])
+
+  expenditure_food <- left_join_strict(
+    consumption,
+    prices,
+    by = c('scenario','region','sector','year')
+  ) %>%
+    dplyr::mutate(food = consumption * price) %>%
     dplyr::group_by(scenario, region, year) %>%
-    dplyr::summarise(value = sum(value)) %>%
-    dplyr::ungroup() %>%
-    dplyr::mutate(var = 'Expenditure|Households') %>%
-    filter_variables() %>%
+    dplyr::summarise(food = sum(food), .groups = 'drop',
+                     value = 0) %>%
+    dplyr::mutate(var = "Expenditure|Households|Food|Agriculture [Share]") %>%
+    dplyr::select(dplyr::all_of(gcamreport::long_columns), food) %>%
+    # Units: share (of the GDP)
+    left_join_strict(GDP_PPP_clean %>%
+                       dplyr::rename(gdp = value) %>%
+                       dplyr::select(-var),
+                     by = c('scenario','region','year')) %>%
+    dplyr::mutate(value = 1e4 * food / gdp) %>%
     dplyr::select(dplyr::all_of(gcamreport::long_columns))
 
-  expenditure_trn <-
-    check_inf(rgcam::getQuery(prj, "costs of transport modes"),
-              dataset_name = "costs of transport modes") %>%
-    dplyr::filter(year <= final_year.global, year >= 1990) %>%
-    dplyr::rename(cost = value, cost_unit = Units) %>%
-    left_join_strict(check_inf(rgcam::getQuery(prj, "transport service output by mode"),
-                               dataset_name = "transport service output by mode") %>%
-                       tidyr::complete(tidyr::nesting(Units, scenario, region, sector),
-                                       year = gcam_years,
-                                       mode = unique(check_inf(rgcam::getQuery(prj, "transport service output by mode"),
-                                                               dataset_name = "transport service output by mode")$mode),
-                                       fill = list(value = 0)
-                       ) %>%
-                       dplyr::filter(year %in% gcam_years, year <= final_year.global) %>%
-                       dplyr::rename(demand = value, demand_unit = Units),
-                     by = c('scenario','region','sector','mode','year')) %>%
-    dplyr::filter(var != 'NoReported', !is.na(var)) %>%
-    filter_variables() %>%
-    # from 1990$ to 2010$
-    dplyr::mutate(demand = demand / get(paste('convert',GCAM_version,sep='_'), envir = asNamespace("gcamreport"))[['conv_million_billion']],
-                  cost = cost * get(paste('convert',GCAM_version,sep='_'), envir = asNamespace("gcamreport"))[['conv_90USD_10USD']] / 1e9) %>%
-    dplyr::mutate(value = cost * demand) %>%
-    # select pass trn
-    dplyr::filter(grepl('trn_pass', sector),
-                  !mode %in% c('LDV','road','4W')) %>%
-    # compute total HH trn expenditure
-    dplyr::group_by(scenario, region, year) %>%
-    dplyr::summarise(value = sum(value)) %>%
-    dplyr::ungroup() %>%
-    dplyr::mutate(var = 'Expenditure|Households') %>%
-    filter_variables() %>%
-    dplyr::select(dplyr::all_of(gcamreport::long_columns))
+  expenditure_food_w <- expenditure_food %>%
+    left_join_strict(population_clean %>%
+                       dplyr::rename(pop = value) %>%
+                       dplyr::select(-var),
+                     by = c('scenario','region','year')) %>%
+    dplyr::group_by(scenario, var, year) %>%
+    dplyr::summarise(value = weighted.mean(value, w = pop),
+                     region = 'World', .groups = 'drop')
 
-  expenditure_food <-
-    check_inf(rgcam::getQuery(prj, "food demand prices"),
-              dataset_name = "food demand prices") %>%
-    dplyr::filter(year <= final_year.global, year >= 1990) %>%
-    dplyr::rename(cost = value, cost_unit = Units, output = input) %>%
-    left_join_strict(check_inf(rgcam::getQuery(prj, "food consumption by type (general)"),
-                               dataset_name = "food consumption by type (general)") %>%
-                       tidyr::complete(tidyr::nesting(Units, scenario, region, output),
-                                       year = gcam_years,
-                                       fill = list(value = 0)
-                       ) %>%
-                       dplyr::filter(year %in% gcam_years, year <= final_year.global) %>%
-                       dplyr::rename(demand = value, demand_unit = Units),
-                     by = c('scenario','region','output','year')) %>%
-    dplyr::filter(var != 'NoReported', !is.na(var)) %>%
-    filter_variables() %>%
-    # from 2005$ to 2010$, 1Mcal = 1e9Pcal, 1billion = 1e9
-    dplyr::mutate(demand = demand,
-                  cost = cost * get(paste('convert',GCAM_version,sep='_'), envir = asNamespace("gcamreport"))[['conv_05USD_10USD']]) %>%
-    dplyr::mutate(value = cost * demand) %>%
-    # compute total HH food expenditure
-    dplyr::group_by(scenario, region, year) %>%
-    dplyr::summarise(value = sum(value)) %>%
-    dplyr::ungroup() %>%
-    dplyr::mutate(var = 'Expenditure|Households') %>%
-    dplyr::select(dplyr::all_of(gcamreport::long_columns))
-  # add column to compute Food [Share] expenditure
-  expenditure_food <- expenditure_food %>%
-    rbind(expenditure_food %>%
-            dplyr::mutate(var = 'Expenditure|Households|Food [Share]')
-          )
-  filter_variables()
 
-  expenditure_clean <-
-    rbind(expenditure_bld,
-          expenditure_trn,
-          expenditure_food) %>%
-    dplyr::group_by(scenario, region, var, year) %>%
-    dplyr::summarise(value = sum(value)) %>%
-    dplyr::ungroup() %>%
-    dplyr::group_by(scenario, region, year) %>%
-    dplyr::mutate(total_hh = value[var == "Expenditure|Households"],
-                  value = dplyr::if_else(var == "Expenditure|Households|Food [Share]",
-                                         100 * value / total_hh, value)) %>%
-    dplyr::ungroup() %>%
-    filter_variables() %>%
-    dplyr::select(dplyr::all_of(gcamreport::long_columns))
-
-    expenditure_clean <<- expenditure_clean
+  expenditure_clean <- dplyr::bind_rows(
+    expenditure_food,
+    expenditure_food_w
+  )
+  expenditure_clean <<- expenditure_clean
 }
 
 

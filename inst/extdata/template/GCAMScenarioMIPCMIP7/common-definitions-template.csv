@@ -2458,7 +2458,7 @@ Energy Service|Transportation|Passenger|Road|Light-Duty Vehicle|Plug-in Hybrid,E
 Expenditure|Government,Total expenditure by governments,billion USD_2010/yr,1,,,CR: Not tracked seperatly from Households,,,,,,,,,,,,,,,,
 Expenditure|Households,Total expenditure by households,billion USD_2010/yr,1,,,,,Expenditure|Household,,,,,,,,,,,,,,
 Expenditure|Households|Food [Share],Share of food expenditure in total income (including value added from food processing chain),%,,,,,,,,,,"[0, 100]",,,,1,GDP|PPP,,,Expenditure Share|Food,,
-Expenditure|Households|Food|Agriculture [Share],Expenditure share for agricultural products in total income based on farm-gate prices (without value added from food processing chain),%,,,,,,,,,,"[0, 100]",,,,1,GDP|PPP,,,,,
+Expenditure|Households|Food|Agriculture [Share],Expenditure share for agricultural products in total income based on farm-gate prices (without value added from food processing chain),%,,expenditure_clean,,,,,,,,"[0, 100]",,,,1,GDP|PPP,,,,,
 Fertilizer Use|Nitrogen,Nitrogen fertilizer use on cropland (synthetic and organic),Tg N/yr,1,fert_consumption_clean,done,,,,,,,,,,,15,,,,,,
 Fertilizer Use|Nitrogen|Organic,Organic nitrogen fertilizer use on cropland (e.g. manure),Tg N/yr,2,,,,,,,,,,,,,15,,,,,,
 Fertilizer Use|Nitrogen|Synthetic,Synthetic nitrogen fertilizer use on cropland,Tg N/yr,2,,,,,,,,,,,,,15,,,,,,
