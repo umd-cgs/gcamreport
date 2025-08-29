@@ -7,6 +7,19 @@ trn_freight,road,Energy Service|Transportation|Freight,Energy Service|Transporta
 trn_freight_road,Heavy truck,NoReported,,,,,1
 trn_freight_road,Light truck,NoReported,,,,,1
 trn_freight_road,Medium truck,NoReported,,,,,1
+trn_pass,Cycle,Energy Service|Transportation|Passenger,,Energy Service|Transportation|Passenger|Active Transport [Share],Energy Service|Transportation|Passenger|Domestic,,1
+trn_pass,Domestic Aviation,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Aviation|Domestic,,Energy Service|Transportation|Passenger|Domestic,,1
+trn_pass,HSR,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,,1
+trn_pass,Passenger Rail,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,,1
+trn_pass,Walk,Energy Service|Transportation|Passenger,,Energy Service|Transportation|Passenger|Active Transport [Share],Energy Service|Transportation|Passenger|Domestic,,1
+trn_pass,road,NoReported,,,Energy Service|Transportation|Passenger|Domestic,,1
+trn_pass_road,LDV,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Road|Light-Duty Vehicle,,,1
+trn_pass_road,Bus,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Public Transport [Share],,,1
+trn_pass_road_LDV,2W and 3W,NoReported,,,,,1
+trn_pass_road_LDV,4W,NoReported,,,,,1
+trn_pass_road_LDV_4W,Car,NoReported,,,,,1
+trn_pass_road_LDV_4W,Large Car and Truck,NoReported,,,,,1
+trn_pass_road_LDV_4W,Mini Car,NoReported,,,,,1
 trn_pass_urban,Cycle,Energy Service|Transportation|Passenger,,Energy Service|Transportation|Passenger|Active Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Urban,1
 trn_pass_urban,Passenger Rail,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Urban,1
 trn_pass_urban,Walk,Energy Service|Transportation|Passenger,,Energy Service|Transportation|Passenger|Active Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Urban,1
