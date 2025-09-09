@@ -1,4 +1,4 @@
-# Prices of all markets
+# Prices of all markets,,,,,,,,,,,,,,,,,,,
 market,var1,var2,var3,var4,var5,var6,var7,var8,var9,var10,var11,var12,var13,var14,var15,var16,var17,var18,unit_conv
 AdnNicIslAdnNicIsl_water consumption,NoReported,,,,,,,,,,,,,,,,,,1
 AdnNicIslAdnNicIsl_water withdrawals,NoReported,,,,,,,,,,,,,,,,,,1
@@ -1144,6 +1144,14 @@ trn_pass-tfe,NoReported,,,,,,,,,,,,,,,,,,1
 trn_pass_road,NoReported,,,,,,,,,,,,,,,,,,1
 trn_pass_road_LDV,NoReported,,,,,,,,,,,,,,,,,,1
 trn_pass_road_LDV_4W,NoReported,,,,,,,,,,,,,,,,,,1
+trn_pass_urban,NoReported,,,,,,,,,,,,,,,,,,1
+trn_pass_road_urban,NoReported,,,,,,,,,,,,,,,,,,1
+trn_pass_road_LDV_urban,NoReported,,,,,,,,,,,,,,,,,,1
+trn_pass_road_LDV_4W_urban,NoReported,,,,,,,,,,,,,,,,,,1
+trn_pass_other,NoReported,,,,,,,,,,,,,,,,,,1
+trn_pass_road_other,NoReported,,,,,,,,,,,,,,,,,,1
+trn_pass_road_LDV_other,NoReported,,,,,,,,,,,,,,,,,,1
+trn_pass_road_LDV_4W_other,NoReported,,,,,,,,,,,,,,,,,,1
 trn_shipping_intl,NoReported,,,,,,,,,,,,,,,,,,1
 trn_shipping_intl-tfe,NoReported,,,,,,,,,,,,,,,,,,1
 urban processes,NoReported,,,,,,,,,,,,,,,,,,1
