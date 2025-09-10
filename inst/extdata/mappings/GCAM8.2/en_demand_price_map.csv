@@ -116,7 +116,13 @@ Price|Primary Energy|Gas,Primary Energy|Gas
 Price|Primary Energy|Oil,Primary Energy|Oil
 Price|Secondary Energy|Electricity,Secondary Energy|Electricity
 Price|Secondary Energy|Gases,Secondary Energy|Gases
+Price|Secondary Energy|Gases|Gas|LNG|Exported,Secondary Energy|Gases|Gas|LNG|Exported
+Price|Secondary Energy|Gases|Gas|Pipeline,Secondary Energy|Gases|Gas|Pipeline
+Price|Secondary Energy|Gases|Gas|Pipeline|Traded,Secondary Energy|Gases|Gas|Pipeline|Traded
+Price|Secondary Energy|Gases|Gas|Pipeline|Traded|International,Secondary Energy|Gases|Gas|Pipeline|Traded|International
 Price|Secondary Energy|Heat,Secondary Energy|Heat
 Price|Secondary Energy|Hydrogen,Secondary Energy|Hydrogen
 Price|Secondary Energy|Liquids,Secondary Energy|Liquids
 Price|Secondary Energy|Solids,Secondary Energy|Solids
+Price|Secondary Energy|Solids|Biomass,Secondary Energy|Solids|Biomass
+Price|Secondary Energy|Solids|Coal,Secondary Energy|Solids|Coal

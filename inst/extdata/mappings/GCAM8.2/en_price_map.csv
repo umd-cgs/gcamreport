@@ -799,7 +799,7 @@ aluminum,NoReported,,,,,,,,,,,,,,,,,,1
 aluminum-tfe,NoReported,,,,,,,,,,,,,,,,,,1
 ammonia,NoReported,,,,,,,,,,,,,,,,,,1
 backup_electricity,NoReported,,,,,,,,,,,,,,,,,,1
-biomass,Price|Secondary Energy|Solids,,,,,,,,,,,,,,,,,,1
+biomass,Price|Secondary Energy|Solids,Price|Secondary Energy|Solids|Biomass,,,,,,,,,,,,,,,,,1
 biophysical water consumption,NoReported,,,,,,,,,,,,,,,,,,1
 capital,NoReported,,,,,,,,,,,,,,,,,,1
 carbon-storage,NoReported,,,,,,,,,,,,,,,,,,1
@@ -809,7 +809,7 @@ chemical,NoReported,,,,,,,,,,,,,,,,,,1
 chemical energy use,NoReported,,,,,,,,,,,,,,,,,,1
 chemical feedstocks,NoReported,,,,,,,,,,,,,,,,,,1
 chemical-tfe,NoReported,,,,,,,,,,,,,,,,,,1
-coal,Price|Secondary Energy|Solids,,,,,,,,,,,,,,,,,,1
+coal,Price|Secondary Energy|Solids,Price|Secondary Energy|Solids|Coal,,,,,,,,,,,,,,,,,1
 comm cooling,NoReported,,,,,,,,,,,,,,,,,,1
 comm heating,NoReported,,,,,,,,,,,,,,,,,,1
 comm others,NoReported,,,,,,,,,,,,,,,,,,1
@@ -873,8 +873,9 @@ electricityDemand_int,NoReported,,,,,,,,,,,,,,,,,,1
 electricity_net_ownuse,NoReported,,,,,,,,,,,,,,,,,,1
 energy net export,NoReported,,,,,,,,,,,,,,,,,,1
 energy service,NoReported,,,,,,,,,,,,,,,,,,1
+exported LNG,Price|Secondary Energy|Gases|Gas|LNG|Exported,,,,,,,,,,,,,,,,,,1
 food processing,NoReported,,,,,,,,,,,,,,,,,,1
-gas pipeline,NoReported,,,,,,,,,,,,,,,,,,1
+gas pipeline,Price|Secondary Energy|Gases|Gas|Pipeline,,,,,,,,,,,,,,,,,,1
 gas processing,Price|Secondary Energy|Gases,,,,,,,,,,,,,,,,,,1
 gas trade statistical differences,NoReported,,,,,,,,,,,,,,,,,,1
 gas trade statistical differencesDemand_int,NoReported,,,,,,,,,,,,,,,,,,1
@@ -1060,6 +1061,8 @@ total soybean,NoReported,,,,,,,,,,,,,,,,,,1
 total sugarcrop,NoReported,,,,,,,,,,,,,,,,,,1
 total vegetables,NoReported,,,,,,,,,,,,,,,,,,1
 total wheat,NoReported,,,,,,,,,,,,,,,,,,1
+traded pipeline gas,Price|Secondary Energy|Gases|Gas|Pipeline|Traded,,,,,,,,,,,,,,,,,,1
+traded pipeline gasDemand_int,Price|Secondary Energy|Gases|Gas|Pipeline|Traded|International,,,,,,,,,,,,,,,,,,1
 traded Afr_MidE pipeline gas,NoReported,,,,,,,,,,,,,,,,,,1
 traded Afr_MidE pipeline gasDemand_int,NoReported,,,,,,,,,,,,,,,,,,1
 traded EUR pipeline gas,NoReported,,,,,,,,,,,,,,,,,,1
