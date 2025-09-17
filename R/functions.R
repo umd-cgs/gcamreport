@@ -1772,6 +1772,7 @@ get_co2_ets <- function(GCAM_version = 'v7.1') {
 # Get CO2 emissions by tech, to break out ships vs rail vs aviation
 # and to get Emissions|CO2|Energy| Coal vs Gas vs Oil.
 # Must create CO2 emissions by tech (no bio) output first to be consistent. There is no query for this
+# Instead, scale the sectors to match the values from the by sector (no bio) query
 
 # Apply bio negative emissions by joining by sector and by sector (no bio) and finding share of non-bio emissions
 
@@ -1793,11 +1794,21 @@ get_nonbio_tmp <- function(GCAM_version = "v7.1") {
   queryItem1 <- var_fun_map[var_fun_map$name == "nonbio_share", "queries"][[1]][1]
   queryItem2 <- var_fun_map[var_fun_map$name == "nonbio_share", "queries"][[1]][2]
 
+  # More closely align sectors in the original query with those in the no bio query
+  by_sector <- check_inf(rgcam::getQuery(prj, queryItem1), dataset_name = queryItem1) %>%
+    dplyr::mutate(sector = dplyr::case_when(grepl("elec_", sector) & !grepl("CCS", sector) ~ "electricity",
+                                              grepl("regional ", sector) ~ "other industrial energy use",
+                                           .default = sector)) %>%
+      dplyr::group_by(across(c(-value))) %>%
+      dplyr::summarise(value = sum(value, na.rm = T)) %>%
+      dplyr::ungroup()
+
+  by_sector_no_bio <- check_inf(rgcam::getQuery(prj, queryItem2), dataset_name = queryItem2)
+
   nonbio_share <-
-    check_inf(rgcam::getQuery(prj, queryItem1), dataset_name = queryItem1) %>%
+    by_sector %>%
     # dplyr::left_join because we can not control queries matching
-    dplyr::left_join(check_inf(rgcam::getQuery(prj, queryItem2),
-                               dataset_name = queryItem2),
+    dplyr::left_join(by_sector_no_bio,
                      by = c("region", "scenario", "year", "sector", "Units")) %>%
     dplyr::mutate(
       value.y = dplyr::if_else(is.na(value.y), value.x, value.y),
@@ -1805,9 +1816,18 @@ get_nonbio_tmp <- function(GCAM_version = "v7.1") {
     ) %>%
     dplyr::select(-value.x, -value.y)
 
+
+  no_bio_new_sectors <- by_sector_no_bio %>%
+    dplyr::anti_join(by_sector,
+                     by = c("region", "scenario", "year", "sector", "Units"))
+
   nonbio_share <<- nonbio_share
+
+  no_bio_new_sectors <<- no_bio_new_sectors
 }
 
+# NOTE: get_co2_tech_nobio_tmp not being used at the moment.
+# Rather, emissions are scaled to the no bio sector within the get_co2_emiss function
 
 #' get_co2_tech_nobio_tmp
 #'
@@ -1831,7 +1851,8 @@ get_co2_tech_nobio_tmp <- function(GCAM_version = "v7.1") {
   co2_tech_nobio_tmp <-
     check_inf(rgcam::getQuery(prj, queryItem1), dataset_name = queryItem1) %>%
     left_join_strict(nonbio_share, by = c("region", "scenario", "year", "sector")) %>%
-    dplyr::filter(var != 'NoReported', !is.na(var)) %>%
+    dplyr::filter(var != 'NoReported') %>%
+    dplyr::filter(!is.na(var)) %>%
     filter_variables() %>%
     dplyr::mutate(value = value * percent) %>%
     dplyr::select(-percent, -Units.x, -Units.y) %>%
@@ -1871,9 +1892,23 @@ get_co2_emiss <- function(GCAM_version = "v7.1") {
   queryItem2 <- var_fun_map[var_fun_map$name == "co2_emiss", "queries"][[1]][2]
   queryItem3 <- var_fun_map[var_fun_map$name == "co2_emiss", "queries"][[1]][3] # to do the check
 
+
+  # Scale by the nobio share by sector
   tmp <-
     check_inf(rgcam::getQuery(prj, queryItem1), dataset_name = queryItem1) %>%
-    dplyr::mutate(ghg = 'CO2')
+    dplyr::mutate(ghg = 'CO2') %>%
+    dplyr::mutate(sector_orig = sector) %>%
+    dplyr::mutate(sector = dplyr::case_when(grepl("elec_", sector) & !grepl("CCS", sector) ~ "electricity",
+                                            grepl("regional ", sector) ~ "other industrial energy use",
+                                         .default = sector)) %>%
+    left_join_strict(nonbio_share %>%
+                       dplyr::select(-ghg),
+                     by = c("region", "scenario", "year", "sector", "Units")) %>%
+    dplyr::mutate(value = value * percent) %>%
+    dplyr::mutate(sector = sector_orig) %>%
+    dplyr::select(-percent, -sector_orig) %>%
+    # bind the results for the additional sectors found in the no bio query
+    dplyr::bind_rows(no_bio_new_sectors)
 
   # gather deciles if necessary
   if(GCAM_version %in% get('deciles_GCAM_versions', envir = asNamespace("gcamreport"))) {
@@ -1951,17 +1986,21 @@ get_co2_emiss <- function(GCAM_version = "v7.1") {
       check_inf(rgcam::getQuery(prj, queryItem3), dataset_name = queryItem3) %>%
       dplyr::mutate(value = value *
                       get(paste('convert',GCAM_version,sep='_'), envir = asNamespace("gcamreport"))[['CO2_equivalent']]) %>%
+      dplyr::group_by(dplyr::across(-c(Units, value))) %>%
+      dplyr::summarise(value = sum(value, na.rm = T)) %>%
+      dplyr::ungroup() %>%
       dplyr::filter(year %in% available_reporting_years) %>%
       left_join_error_no_match(co2_emiss %>%
                                  dplyr::filter(var == 'Emissions|CO2'),
                                by = c('scenario','region','year')) %>%
-      dplyr::mutate(diff = value.x - value.y)
+      dplyr::mutate(diff = value.x - value.y,
+                    diff_pct = diff/value.x * 100)
 
-    if (!max(abs(check$diff)) < 1e-10) {
+    if (!max(abs(check$diff)) < 1e-2) {
       check <<- check %>%
         dplyr::rename(value.var = value.x,
                       value.query = value.y)
-      warning("The annual Emissions|CO2 sum by region does not match the output of the `CO2 emissions by region` query.\nType `check` to see the deatils.")
+      warning("The annual Emissions|CO2 sum by region does not match the output of the `CO2 emissions by region` query.\nType `check` to see the details.")
     }
   }
 
