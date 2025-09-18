@@ -1797,7 +1797,6 @@ get_nonbio_tmp <- function(GCAM_version = "v7.1") {
   # More closely align sectors in the original query with those in the no bio query
   by_sector <- check_inf(rgcam::getQuery(prj, queryItem1), dataset_name = queryItem1) %>%
     dplyr::mutate(sector = dplyr::case_when(grepl("elec_", sector) & !grepl("CCS", sector) ~ "electricity",
-                                              grepl("regional ", sector) ~ "other industrial energy use",
                                            .default = sector)) %>%
       dplyr::group_by(across(c(-value))) %>%
       dplyr::summarise(value = sum(value, na.rm = T)) %>%
@@ -1805,13 +1804,16 @@ get_nonbio_tmp <- function(GCAM_version = "v7.1") {
 
   by_sector_no_bio <- check_inf(rgcam::getQuery(prj, queryItem2), dataset_name = queryItem2)
 
+  # NOTE: verify that the sectors which don't appear in the (no bio) query are expected to be missing,
+  # i.e. negative biomass emissions sectors which are yet to be distributed by sector
   nonbio_share <-
     by_sector %>%
     # dplyr::left_join because we can not control queries matching
     dplyr::left_join(by_sector_no_bio,
                      by = c("region", "scenario", "year", "sector", "Units")) %>%
     dplyr::mutate(
-      value.y = dplyr::if_else(is.na(value.y), value.x, value.y),
+      # Give values of zero to sectors that don't appear in the (no bio) query
+      value.y = dplyr::if_else(is.na(value.y), 0, value.y),
       percent = value.y / value.x
     ) %>%
     dplyr::select(-value.x, -value.y)
@@ -1899,7 +1901,6 @@ get_co2_emiss <- function(GCAM_version = "v7.1") {
     dplyr::mutate(ghg = 'CO2') %>%
     dplyr::mutate(sector_orig = sector) %>%
     dplyr::mutate(sector = dplyr::case_when(grepl("elec_", sector) & !grepl("CCS", sector) ~ "electricity",
-                                            grepl("regional ", sector) ~ "other industrial energy use",
                                          .default = sector)) %>%
     left_join_strict(nonbio_share %>%
                        dplyr::select(-ghg),
