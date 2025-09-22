@@ -1,6 +1,6 @@
-# common-definitions.commit_hash: 877c3c38274a8800e57f6a7b10556c3e04bc46ce,,,,,,,,,,,,,,,,,,,,,,
-# common-definitions.commit_timestamp: 2025-07-14 09:57:50,,,,,,,,,,,,,,,,,,,,,,
-# common-definitions.url: git@github.com:IAMconsortium/common-definitions,,,,,,,,,,,,,,,,,,,,,,
+# common-definitions.commit_hash: 877c3c38274a8800e57f6a7b10556c3e04bc46ce
+# common-definitions.commit_timestamp: 2025-07-14 09:57:50
+# common-definitions.url: git@github.com:IAMconsortium/common-definitions
 variable,description,unit,tier,Internal_variable,Status,comments.answers,engage,navigate,notes,lower_bound,note,range,region.aggregation,check.aggregate,skip.region.aggregation,sdg,weight,min,components,shape,agmip,ngfs5
 Agricultural Demand,"Total demand for food, non-food and feed products (crops and livestock) and bioenergy crops (1st & 2nd generation)",million t DM/yr,1,ag_demand_clean,done,,,,,,,,,,,,,,,,Domestic use (CONS),
 Agricultural Demand|Crops,"Demand for crops including food, feed products and bioenergy (1st & 2nd generation crops)",million t DM/yr,1,ag_demand_clean,done,,,,,,,,,,,,,,,,Domestic use (CONS) - Crops (CRP),
@@ -2456,7 +2456,18 @@ Energy Service|Transportation|Passenger|Aviation|Domestic,Energy service demand 
 Energy Service|Transportation|Passenger|Aviation|International,Energy service demand for passenger transport on International Aviation,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
 Energy Service|Transportation|Passenger|Domestic,Energy service demand for domestic passenger transport,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
 Energy Service|Transportation|Passenger|Domestic|Urban,Energy service demand for domestic intra-city passenger transport,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
+Energy Service|Transportation|Passenger|Domestic|Urban|Cycle,Energy service demand for domestic intra-city cycling,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
+Energy Service|Transportation|Passenger|Domestic|Urban|Passenger Rail,Energy service demand for domestic intra-city passenger rail,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
+Energy Service|Transportation|Passenger|Domestic|Urban|Walk,Energy service demand for domestic intra-city walking,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
+Energy Service|Transportation|Passenger|Domestic|Urban|Road,Energy service demand for domestic intra-city passenger road transport,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
+Energy Service|Transportation|Passenger|Domestic|Urban|Light-Duty Vehicle,Energy service demand for domestic intra-city passenger transport on LDVs,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
+Energy Service|Transportation|Passenger|Domestic|Urban|Bus,Energy service demand for domestic intra-city passenger transport on buses,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
 Energy Service|Transportation|Passenger|Domestic|Other,Energy service demand for domestic other (inter-city and rural) passenger transport,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
+Energy Service|Transportation|Passenger|Domestic|Other|HSR,Energy service demand for domestic other (inter-city and rural) passenger transport on HSR,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
+Energy Service|Transportation|Passenger|Domestic|Other|Passenger Rail,Energy service demand for domestic other (inter-city and rural) passenger rail transport,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
+Energy Service|Transportation|Passenger|Domestic|Other|Road,Energy service demand for domestic other (inter-city and rural) passenger road transport,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
+Energy Service|Transportation|Passenger|Domestic|Other|Light-Duty Vehicle,Energy service demand for domestic other (inter-city and rural) passenger transport on LDVs,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
+Energy Service|Transportation|Passenger|Domestic|Other|Bus,Energy service demand for domestic other (inter-city and rural) passenger transport on buses,billion pkm/yr,2,energy_service_transportation_clean,done,,,,,,,,,,,,,,,,,
 Energy Service|Transportation|Passenger|Public Transport [Share],Share of public transit in passenger transport,%,,energy_service_transportation_clean,done,CR: not clear what's public and what's not,,,,,,"[0, 100]",,,TRUE,7,,,,Energy Service|Transportation|Passenger|PublicTransport|Share,,
 Energy Service|Transportation|Passenger|Road,Energy service demand for passenger transport on roads,billion pkm/yr,,energy_service_transportation_clean,done,,,,,,,,,,,7,,,,,,
 Energy Service|Transportation|Passenger|Road|Light-Duty Vehicle,Energy service demand for passenger transport on roads in light duty vehicles,billion pkm/yr,2,,,,,Energy Service|Transportation|Road|LDV,,,,,,,,,,,,,,

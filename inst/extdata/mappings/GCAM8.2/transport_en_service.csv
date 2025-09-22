@@ -1,45 +1,45 @@
-﻿#Transport Energy Service,,,,,,,
-sector,mode,var1,var2,var3,var4,var5,unit_conv
-trn_aviation_intl,International Aviation,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Aviation|International,,,,1
-trn_freight,Domestic Ship,Energy Service|Transportation|Freight,Energy Service|Transportation|Freight|Shipping|Domestic,,Energy Service|Transportation|Freight|Domestic,,1
-trn_freight,Freight Rail,Energy Service|Transportation|Freight,,,Energy Service|Transportation|Freight|Domestic,,1
-trn_freight,road,Energy Service|Transportation|Freight,Energy Service|Transportation|Freight|Truck,,Energy Service|Transportation|Freight|Domestic,,1
-trn_freight_road,Heavy truck,NoReported,,,,,1
-trn_freight_road,Light truck,NoReported,,,,,1
-trn_freight_road,Medium truck,NoReported,,,,,1
-trn_pass,Cycle,Energy Service|Transportation|Passenger,,Energy Service|Transportation|Passenger|Active Transport [Share],Energy Service|Transportation|Passenger|Domestic,,1
-trn_pass,Domestic Aviation,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Aviation|Domestic,,Energy Service|Transportation|Passenger|Domestic,,1
-trn_pass,HSR,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,,1
-trn_pass,Passenger Rail,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,,1
-trn_pass,Walk,Energy Service|Transportation|Passenger,,Energy Service|Transportation|Passenger|Active Transport [Share],Energy Service|Transportation|Passenger|Domestic,,1
-trn_pass,road,NoReported,,,Energy Service|Transportation|Passenger|Domestic,,1
-trn_pass_road,LDV,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Road|Light-Duty Vehicle,,,1
-trn_pass_road,Bus,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Public Transport [Share],,,1
-trn_pass_road_LDV,2W and 3W,NoReported,,,,,1
-trn_pass_road_LDV,4W,NoReported,,,,,1
-trn_pass_road_LDV_4W,Car,NoReported,,,,,1
-trn_pass_road_LDV_4W,Large Car and Truck,NoReported,,,,,1
-trn_pass_road_LDV_4W,Mini Car,NoReported,,,,,1
-trn_pass_urban,Cycle,Energy Service|Transportation|Passenger,,Energy Service|Transportation|Passenger|Active Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Urban,1
-trn_pass_urban,Passenger Rail,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Urban,1
-trn_pass_urban,Walk,Energy Service|Transportation|Passenger,,Energy Service|Transportation|Passenger|Active Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Urban,1
-trn_pass_urban,road,NoReported,,,Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Urban,1
-trn_pass_road_urban,LDV,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Road|Light-Duty Vehicle,,,1
-trn_pass_road_urban,Bus,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Public Transport [Share],,,1
-trn_pass_road_LDV_urban,2W and 3W,NoReported,,,,,1
-trn_pass_road_LDV_urban,4W,NoReported,,,,,1
-trn_pass_road_LDV_4W_urban,Car,NoReported,,,,,1
-trn_pass_road_LDV_4W_urban,Large Car and Truck,NoReported,,,,,1
-trn_pass_road_LDV_4W_urban,Mini Car,NoReported,,,,,1
-trn_pass_other,Domestic Aviation,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Aviation|Domestic,,Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Other,1
-trn_pass_other,HSR,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Other,1
-trn_pass_other,Passenger Rail,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Other,1
-trn_pass_other,road,NoReported,,,Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Other,1
-trn_pass_road_other,LDV,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Road|Light-Duty Vehicle,,,1
-trn_pass_road_other,Bus,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Public Transport [Share],,,1
-trn_pass_road_LDV_other,2W and 3W,NoReported,,,,,1
-trn_pass_road_LDV_other,4W,NoReported,,,,,1
-trn_pass_road_LDV_4W_other,Car,NoReported,,,,,1
-trn_pass_road_LDV_4W_other,Large Car and Truck,NoReported,,,,,1
-trn_pass_road_LDV_4W_other,Mini Car,NoReported,,,,,1
-trn_shipping_intl,International Ship,Energy Service|Transportation|Freight,Energy Service|Transportation|Freight|Shipping|International,,,,1
+﻿#Transport Energy Service
+sector,mode,var1,var2,var3,var4,var5,var6,unit_conv
+trn_aviation_intl,International Aviation,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Aviation|International,,,,,1
+trn_freight,Domestic Ship,Energy Service|Transportation|Freight,Energy Service|Transportation|Freight|Shipping|Domestic,,Energy Service|Transportation|Freight|Domestic,,,1
+trn_freight,Freight Rail,Energy Service|Transportation|Freight,,,Energy Service|Transportation|Freight|Domestic,,,1
+trn_freight,road,Energy Service|Transportation|Freight,Energy Service|Transportation|Freight|Truck,,Energy Service|Transportation|Freight|Domestic,,,1
+trn_freight_road,Heavy truck,NoReported,,,,,,1
+trn_freight_road,Light truck,NoReported,,,,,,1
+trn_freight_road,Medium truck,NoReported,,,,,,1
+trn_pass,Cycle,Energy Service|Transportation|Passenger,,Energy Service|Transportation|Passenger|Active Transport [Share],Energy Service|Transportation|Passenger|Domestic,,,1
+trn_pass,Domestic Aviation,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Aviation|Domestic,,Energy Service|Transportation|Passenger|Domestic,,,1
+trn_pass,HSR,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,,,1
+trn_pass,Passenger Rail,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,,,1
+trn_pass,Walk,Energy Service|Transportation|Passenger,,Energy Service|Transportation|Passenger|Active Transport [Share],Energy Service|Transportation|Passenger|Domestic,,,1
+trn_pass,road,NoReported,,,Energy Service|Transportation|Passenger|Domestic,,,1
+trn_pass_road,LDV,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Road|Light-Duty Vehicle,,,,1
+trn_pass_road,Bus,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Public Transport [Share],,,,1
+trn_pass_road_LDV,2W and 3W,NoReported,,,,,,1
+trn_pass_road_LDV,4W,NoReported,,,,,,1
+trn_pass_road_LDV_4W,Car,NoReported,,,,,,1
+trn_pass_road_LDV_4W,Large Car and Truck,NoReported,,,,,,1
+trn_pass_road_LDV_4W,Mini Car,NoReported,,,,,,1
+trn_pass_urban,Cycle,Energy Service|Transportation|Passenger,,Energy Service|Transportation|Passenger|Active Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Urban,Energy Service|Transportation|Passenger|Domestic|Urban|Cycle,1
+trn_pass_urban,Passenger Rail,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Urban,Energy Service|Transportation|Passenger|Domestic|Urban|Passenger Rail,1
+trn_pass_urban,Walk,Energy Service|Transportation|Passenger,,Energy Service|Transportation|Passenger|Active Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Urban,Energy Service|Transportation|Passenger|Domestic|Urban|Walk,1
+trn_pass_urban,road,NoReported,,,Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Urban,Energy Service|Transportation|Passenger|Domestic|Urban|Road,1
+trn_pass_road_urban,LDV,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Road|Light-Duty Vehicle,,,Energy Service|Transportation|Passenger|Domestic|Urban|Light-Duty Vehicle,1
+trn_pass_road_urban,Bus,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Public Transport [Share],,,Energy Service|Transportation|Passenger|Domestic|Urban|Bus,1
+trn_pass_road_LDV_urban,2W and 3W,NoReported,,,,,,1
+trn_pass_road_LDV_urban,4W,NoReported,,,,,,1
+trn_pass_road_LDV_4W_urban,Car,NoReported,,,,,,1
+trn_pass_road_LDV_4W_urban,Large Car and Truck,NoReported,,,,,,1
+trn_pass_road_LDV_4W_urban,Mini Car,NoReported,,,,,,1
+trn_pass_other,Domestic Aviation,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Aviation|Domestic,,Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Other,,1
+trn_pass_other,HSR,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Other,Energy Service|Transportation|Passenger|Domestic|Other|HSR,1
+trn_pass_other,Passenger Rail,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Railways,Energy Service|Transportation|Passenger|Public Transport [Share],Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Other,Energy Service|Transportation|Passenger|Domestic|Other|Passenger Rail,1
+trn_pass_other,road,NoReported,,,Energy Service|Transportation|Passenger|Domestic,Energy Service|Transportation|Passenger|Domestic|Other,Energy Service|Transportation|Passenger|Domestic|Other|Road,1
+trn_pass_road_other,LDV,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Road|Light-Duty Vehicle,,,Energy Service|Transportation|Passenger|Domestic|Other|Light-Duty Vehicle,1
+trn_pass_road_other,Bus,Energy Service|Transportation|Passenger,Energy Service|Transportation|Passenger|Road,Energy Service|Transportation|Passenger|Public Transport [Share],,,Energy Service|Transportation|Passenger|Domestic|Other|Bus,1
+trn_pass_road_LDV_other,2W and 3W,NoReported,,,,,,1
+trn_pass_road_LDV_other,4W,NoReported,,,,,,1
+trn_pass_road_LDV_4W_other,Car,NoReported,,,,,,1
+trn_pass_road_LDV_4W_other,Large Car and Truck,NoReported,,,,,,1
+trn_pass_road_LDV_4W_other,Mini Car,NoReported,,,,,,1
+trn_shipping_intl,International Ship,Energy Service|Transportation|Freight,Energy Service|Transportation|Freight|Shipping|International,,,,,1
