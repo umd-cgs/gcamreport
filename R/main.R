@@ -373,7 +373,7 @@ create_project <- function(db_path, db_name, prj_name, scenarios = NULL,
 load_variable <- function(var, GCAM_version = 'v7.1', GWP_version = 'AR5') {
 
   # base case: if variable already loaded, return
-  if (exists(var$name)) {
+  if (exists(as.character(var$name))) {
     return()
   }
 
@@ -400,7 +400,7 @@ load_variable <- function(var, GCAM_version = 'v7.1', GWP_version = 'AR5') {
   }
 
   # keep record of the loaded variables
-  loaded_internal_variables.global <<- c(loaded_internal_variables.global, var$name)
+  loaded_internal_variables.global <<- c(loaded_internal_variables.global, as.character(var$name))
 }
 
 
@@ -878,7 +878,7 @@ generate_report <- function(db_path = NULL, db_name = NULL, prj_name, scenarios 
   # remove internal variables from the environment
   rm(list = loaded_internal_variables.global, envir = .GlobalEnv)
   rm(list = c("loaded_internal_variables.global"), envir = .GlobalEnv)
-  rm(list = c("ignore.global", "variables.global", "interactive.global", "GCAM_version"), envir = .myGlobals)
+  rm(list = c("ignore.global", "variables.global", "interactive.global"), envir = .myGlobals)
   gc()
 
   if (launch_ui) {

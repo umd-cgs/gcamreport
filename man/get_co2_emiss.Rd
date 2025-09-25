@@ -14,6 +14,7 @@ get_co2_emiss(GCAM_version = "v7.1")
 }
 \description{
 Retrieves the non-bio CO2 emissions query by sector, subsector, and technology.
+Emissions are scaled to the no bio sector within the get_co2_emiss function.
 }
 \keyword{co2}
 \keyword{internal}
