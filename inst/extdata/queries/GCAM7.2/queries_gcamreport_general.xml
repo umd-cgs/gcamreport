@@ -143,7 +143,7 @@
            declare function local:generate-sector-input-coefs($outputNameQueue as xs:string*, $currTree as node(), $coefs as node()*, $is_usa as xs:boolean) as node()* {
           if(empty($outputNameQueue)) then $coefs
           else if( exists($coefs[@name = $outputNameQueue[1]]) or exists(index-of(('biomass',
-'traded oil', 'traded coal', 'traded natural gas', 'traded Afr_MidE pipeline gas', 'traded LA pipeline gas', 'traded PAC pipeline gas', 'traded N.Amer pipeline gas', 'traded RUS pipeline gas', 'traded EUR pipeline gas', 'traded LNG', 'regional corn for ethanol', 'regional biomassOil', 'regional sugar for ethanol', 'regional sugarbeet for ethanol', 'regional woodpulp for energy'),
+'traded oil', 'traded coal', 'traded natural gas','traded pipeline gas', 'traded Afr_MidE pipeline gas', 'traded LA pipeline gas', 'traded PAC pipeline gas', 'traded N.Amer pipeline gas', 'traded RUS pipeline gas', 'traded EUR pipeline gas', 'traded LNG', 'regional corn for ethanol', 'regional biomassOil', 'regional sugar for ethanol', 'regional sugarbeet for ethanol', 'regional woodpulp for energy'),
 $outputNameQueue[1])) or not($currTree/*[@type='sector' and @name=$outputNameQueue[1]]))
 then 
 (:if(not($is_usa) and string-length($currTree/@name) = 2) then
@@ -302,6 +302,7 @@ local:run-input-by-primary((:scenarios:), (:regions:), (:collection:))
                  <rewrite from="water consumption CCS" to=""/>
                  <rewrite from="traditional biomass" to="j traditional biomass"/>
                  <rewrite from="seawater CCS" to=""/>
+                 <rewrite from="traded pipeline gas CCS" to="b natural gas CCS"/>
                  <rewrite from="traded EUR pipeline gas CCS" to="b natural gas CCS"/>
                  <rewrite from="coal CCS" to="c coal CCS"/>
                  <rewrite from="traded LNG" to="b natural gas"/>
@@ -310,6 +311,7 @@ local:run-input-by-primary((:scenarios:), (:regions:), (:collection:))
                  <rewrite from="traded coal" to="c coal"/>
                  <rewrite from="limestone" to=""/>
                  <rewrite from="seawater" to=""/>
+                 <rewrite from="traded pipeline gas" to="b natural gas"/>
                  <rewrite from="traded EUR pipeline gas" to="b natural gas"/>
                  <rewrite from="traded biomass CCS" to="d biomass CCS"/>
                  <rewrite from="traded PAC pipeline gas CCS" to="b natural gas CCS"/>
