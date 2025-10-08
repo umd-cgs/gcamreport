@@ -874,6 +874,7 @@ electricity_net_ownuse,NoReported,,,,,,,,,,,,,,,,,,1
 energy net export,NoReported,,,,,,,,,,,,,,,,,,1
 energy service,NoReported,,,,,,,,,,,,,,,,,,1
 exported LNG,Price|Secondary Energy|Gases|Gas|LNG|Exported,,,,,,,,,,,,,,,,,,1
+exported pipeline gas,Price|Secondary Energy|Gases|Gas|Pipeline|Exported,,,,,,,,,,,,,,,,,,1
 food processing,NoReported,,,,,,,,,,,,,,,,,,1
 gas pipeline,Price|Secondary Energy|Gases|Gas|Pipeline,,,,,,,,,,,,,,,,,,1
 gas processing,Price|Secondary Energy|Gases,,,,,,,,,,,,,,,,,,1

@@ -1,4 +1,4 @@
-# Kyoto gases by sector,,,,,,,,,,,,,,,,
+# Kyoto gases by sector
 ghg,ghg_sector,sector,subsector,var1,var2,var3,var4,var5,var6,var7,var8,var9,var10,var11,var12,unit_conv
 C2F6,,industrial processes,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Demand,Emissions|Kyoto Gases|Energy|Demand|Industry,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 C2F6,,urban processes,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Other,,,,,,,,,,,1
@@ -120,6 +120,7 @@ CO2,,elec_refined liquids (CC),,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Ener
 CO2,,elec_refined liquids (steam/CT),,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Electricity,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 CO2,,electricity,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Electricity,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 CO2,,exported LNG,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Gases,Emissions|Kyoto Gases|Energy|Supply|Gases|Gas|LNG|Exported,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
+CO2,,exported pipeline gas,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Gases,Emissions|Kyoto Gases|Energy|Supply|Gases|Gas|Pipeline|Exported,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 CO2,,gas pipeline,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Gases,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 CO2,,gas processing,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Gases,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 CO2,,H2 central production,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Hydrogen,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
