@@ -1857,7 +1857,12 @@ get_co2_emiss <- function(GCAM_version = "v7.1") {
                        dplyr::select(-ghg),
                      by = c("region", "scenario", "year", "sector", "Units")) %>%
     tidyr::replace_na(list(value = 0, diff = 0)) %>%
-    dplyr::group_by(Units, scenario, region, sector, ghg, year) %>%
+    dplyr::group_by(scenario, sector) %>%
+    # For sectors where the no bio query returns a small value, whereas the normal query has no value,
+    # make the subsector and technology the first types present for other data, so that mapping matches
+    mutate(subsector = ifelse(is.na(subsector), unique(subsector)[1], subsector)) %>%
+    mutate(technology = ifelse(is.na(technology), unique(technology)[1], technology)) %>%
+    dplyr::group_by(scenario, region, sector, year) %>%
     # ensure that negative bio emissions not applied to purely fossil techs like coal
     dplyr::mutate(diff = ifelse(grepl("coal", technology) & sum(!grepl("coal", technology)) > 0, 0, diff)) %>%
     dplyr::mutate(diff = dplyr::case_when(sum(diff != 0) > 0 ~ diff / sum(diff != 0),
