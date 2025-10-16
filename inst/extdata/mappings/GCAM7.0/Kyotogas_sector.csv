@@ -299,5 +299,19 @@ N2O,AGR,Wheat,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|AFOLU,Emissions|Kyoto
 N2O,AWB,Wheat,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|AFOLU,Emissions|Kyoto Gases|AFOLU [NGHGI],Emissions|Kyoto Gases|AFOLU|Agricultural Waste Burning,,,,,,,,,1
 SF6,,electricity_net_ownuse,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Electricity,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 SF6,,industrial processes,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Demand,Emissions|Kyoto Gases|Energy|Demand|Industry,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
-,,,,,,,,,,,,,,,,
-,,,,,,,,,,,,,,,,
+C2F6,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+CF4,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+CO2,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+HFC125,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+HFC134a,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+HFC143a,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+HFC152a,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+HFC227ea,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+HFC23,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+HFC245fa,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+HFC32,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+HFC365mfc,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+HFC43,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+N2O,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+SF6,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+HFC236fa,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
