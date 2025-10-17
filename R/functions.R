@@ -1277,7 +1277,14 @@ get_food_availability <- function(GCAM_version = "v7.1") {
   food_availability_pre <- check_inf(rgcam::getQuery(prj, 'food consumption by type (specific)'),
                                         dataset_name = "food consumption by type (specific)") %>%
     dplyr::filter(year <= final_year.global, year >= 1990) %>%
-    dplyr::rename(subsector = `subsector...4`) %>%
+    # if "subsector...4" is a colnum name, change it to "subsector". Otherwise, keep going
+    {
+      if ("subsector...4" %in% names(.)) {
+        dplyr::rename(., subsector = `subsector...4`)
+      } else {
+        .
+      }
+    } %>%
     left_join_strict(get(paste('food_intake_map',GCAM_version,sep='_'), envir = asNamespace("gcamreport")),
                      by = c("subsector","technology"), mapping = paste('food_intake_map',GCAM_version,sep='_'), multiple = "all") %>%
     dplyr::filter(var != 'NoReported', !is.na(var)) %>%
@@ -1353,7 +1360,14 @@ get_food_intake <- function(GCAM_version = "v7.1") {
     check_inf(rgcam::getQuery(prj, 'food consumption by type (specific)'),
               dataset_name = "food consumption by type (specific)") %>%
     dplyr::filter(year <= final_year.global, year >= 1990) %>%
-    dplyr::rename(subsector = `subsector...4`) %>%
+    # if "subsector...4" is a colnum name, change it to "subsector". Otherwise, keep going
+    {
+      if ("subsector...4" %in% names(.)) {
+        dplyr::rename(., subsector = `subsector...4`)
+      } else {
+        .
+      }
+    } %>%
     left_join_strict(get(paste('food_intake_map',GCAM_version,sep='_'), envir = asNamespace("gcamreport")),
                    by = c("subsector","technology"), mapping = paste('food_intake_map',GCAM_version,sep='_'), multiple = "all") %>%
     dplyr::filter(var != 'NoReported', !is.na(var)) %>%
