@@ -53,3 +53,9 @@ traded PAC pipeline gas,Primary Energy,Primary Energy|Fossil,Primary Energy|Foss
 traded Afr_MidE pipeline gas CCS,Primary Energy,Primary Energy|Fossil,Primary Energy|Fossil|w/o CCS,Primary Energy|Gas,Primary Energy|Gas|w/o CCS,Primary Energy|Secondary Energy Trade,,,,,1
 traded PAC pipeline gas CCS,Primary Energy,Primary Energy|Fossil,Primary Energy|Fossil|w/o CCS,Primary Energy|Gas,Primary Energy|Gas|w/o CCS,Primary Energy|Secondary Energy Trade,,,,,1
 regional woodpulp for energy,Primary Energy,Primary Energy|Biomass,Primary Energy|Biomass|w/o CCS,Primary Energy|Biomass|Electricity,Primary Energy|Biomass|Electricity|w/o CCS,Primary Energy|Biomass|Residues,Primary Energy|Biomass|Residues|Forest Residues,Primary Energy|Biomass|Modern,Primary Energy|Biomass|Modern|w/o CCS,Primary Energy|Secondary Energy Trade,1
+bio_ceiling,NoReported,,,,,,,,,,1
+bio_ceiling CCS,NoReported,,,,,,,,,,1
+onshore wind resource,Primary Energy,Primary Energy|Non-Biomass Renewables,Primary Energy|Wind,,,,,,,,1
+onshore wind resource CCS,Primary Energy,Primary Energy|Non-Biomass Renewables,Primary Energy|Wind,,,,,,,,1
+geothermal,Primary Energy,Primary Energy|Non-Biomass Renewables,Primary Energy|Geothermal,,,,,,,,1
+global solar resource CCS,Primary Energy,Primary Energy|Non-Biomass Renewables,Primary Energy|Solar,,,,,,,,1

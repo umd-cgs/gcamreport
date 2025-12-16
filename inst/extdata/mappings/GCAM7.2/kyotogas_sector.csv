@@ -82,6 +82,7 @@ CH4,,waste biomass for paper,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy
 CH4,AWB,Wheat,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|AFOLU,Emissions|Kyoto Gases|AFOLU [NGHGI],Emissions|Kyoto Gases|AFOLU|Agricultural Waste Burning,,,,,,,,,1
 CO2,,agricultural energy use,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Demand,Emissions|Kyoto Gases|Energy|Demand|AFOFI,,Emissions|Kyoto Gases|Energy|Demand|Residential and Commercial and AFOFI,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 CO2,,airCO2,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Other Capture and Removal,,,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
+CO2,,biochar,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Other Capture and Removal,,,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 CO2,,alumina,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Demand,Emissions|Kyoto Gases|Energy|Demand|Industry,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 CO2,,ammonia,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Demand,Emissions|Kyoto Gases|Energy|Demand|Industry,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 CO2,,backup_electricity,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Electricity,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
@@ -325,3 +326,9 @@ HFC43,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases
 N2O,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
 SF6,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
 HFC236fa,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Product Use,Emissions|Kyoto Gases|Product Use|Solvents,,,,,,,,,,1
+CO2,,H2 LDV,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Hydrogen,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
+CO2,,H2 MHDV,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Hydrogen,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
+CO2,,LH2,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Hydrogen,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
+H2,,H2 LDV,,Emissions|Kyoto Gases,,,,,,,,,,,,1
+H2,,H2 MHDV,,Emissions|Kyoto Gases,,,,,,,,,,,,1
+H2,,LH2,,Emissions|Kyoto Gases,,,,,,,,,,,,1

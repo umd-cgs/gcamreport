@@ -69,3 +69,7 @@ refining,coal to liquids,coal to liquids CCS level 2,Secondary Energy|Liquids,Se
 refining,gas to liquids,gas to liquids,Secondary Energy|Liquids,Secondary Energy|Liquids|Gas,Secondary Energy|Liquids|Fossil,,,,,1
 refining,oil refining,oil refining,Secondary Energy|Liquids,Secondary Energy|Liquids|Oil,,,,,,1
 refining,biomass liquids,sugar cane ethanol,Secondary Energy|Liquids,Secondary Energy|Liquids|Biomass,,,,,,1
+refining,dac to liquids,industrial hydrogen,Secondary Energy|Liquids,Secondary Energy|Liquids|Hydrogen,,,,,,1
+refining,dac to liquids,on-site electrolysis (grid electricity),Secondary Energy|Liquids,Secondary Energy|Liquids|Hydrogen,,,,,,1
+refining,dac to liquids,on-site electrolysis (solar),Secondary Energy|Liquids,Secondary Energy|Liquids|Hydrogen,,,,,,1
+refining,dac to liquids,on-site electrolysis (wind),Secondary Energy|Liquids,Secondary Energy|Liquids|Hydrogen,,,,,,1

@@ -12,7 +12,7 @@ get_fgas(GCAM_version = "v7.1", GWP_version = "AR5")
 \item{GWP_version}{Global Warming Potential (GWP) version: 'AR5' (default), 'AR6', or 'AR4'.}
 }
 \value{
-`f_gas_clean` global variable.
+`f_gases_total`, `f_gases_hfc`, `f_gases_pfc` global variables.
 }
 \description{
 Computes F-Gases emissions.

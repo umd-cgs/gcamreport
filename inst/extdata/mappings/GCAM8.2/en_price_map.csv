@@ -114,14 +114,19 @@ BrzCstN_desalinated water,NoReported,,,,,,,,,,,,,,,,,,1
 BrzCstSBrzCstS_water consumption,NoReported,,,,,,,,,,,,,,,,,,1
 BrzCstSBrzCstS_water withdrawals,NoReported,,,,,,,,,,,,,,,,,,1
 BrzCstS_desalinated water,NoReported,,,,,,,,,,,,,,,,,,1
+carbon-storage dynamic,NoReported,,,,,,,,,,,,,,,,,,1
+ccs dynamic-capacity,NoReported,,,,,,,,,,,,,,,,,,1
 C2F6,NoReported,,,,,,,,,,,,,,,,,,1
 CF4,NoReported,,,,,,,,,,,,,,,,,,1
 CH4,NoReported,,,,,,,,,,,,,,,,,,1
 CH4_AGR,NoReported,,,,,,,,,,,,,,,,,,1
 CH4_AWB,NoReported,,,,,,,,,,,,,,,,,,1
 CO2,NoReported,,,,,,,,,,,,,,,,,,1
+CO2 pipeline,NoReported,,,,,,,,,,,,,,,,,,1
 CO2 removal,NoReported,,,,,,,,,,,,,,,,,,1
 CO2 removal-tfe,NoReported,,,,,,,,,,,,,,,,,,1
+CO2 ship,NoReported,,,,,,,,,,,,,,,,,,1
+CO2 truck,NoReported,,,,,,,,,,,,,,,,,,1
 CO2_LUC,NoReported,,,,,,,,,,,,,,,,,,1
 CaliforniaCalifornia_water consumption,NoReported,,,,,,,,,,,,,,,,,,1
 CaliforniaCalifornia_water withdrawals,NoReported,,,,,,,,,,,,,,,,,,1
@@ -306,6 +311,7 @@ GuineaGulfGuineaGulf_water consumption,NoReported,,,,,,,,,,,,,,,,,,1
 GuineaGulfGuineaGulf_water withdrawals,NoReported,,,,,,,,,,,,,,,,,,1
 GuineaGulf_desalinated water,NoReported,,,,,,,,,,,,,,,,,,1
 H2 central production,Price|Secondary Energy|Hydrogen,,,,,,,,,,,,,,,,,,1
+H2 central productionDemand_int,NoReported,,,,,,,,,,,,,,,,,,1
 H2 industrial,Price|Final Energy|Industry|Hydrogen,Price|Final Energy|Industry|Chemicals|Ammonia|Hydrogen,Price|Final Energy|Industry|Iron and Steel|Hydrogen,Price|Final Energy|Industry|Other Sector|Hydrogen,,,,,,,,,,,,,,,1
 H2 liquid truck,NoReported,,,,,,,,,,,,,,,,,,1
 H2 pipeline,NoReported,,,,,,,,,,,,,,,,,,1
@@ -527,6 +533,8 @@ ObR_desalinated water,NoReported,,,,,,,,,,,,,,,,,,1
 OderROderR_water consumption,NoReported,,,,,,,,,,,,,,,,,,1
 OderROderR_water withdrawals,NoReported,,,,,,,,,,,,,,,,,,1
 OderR_desalinated water,NoReported,,,,,,,,,,,,,,,,,,1
+offshore CO2 transport,NoReported,,,,,,,,,,,,,,,,,,1
+onshore CO2 transport,NoReported,,,,,,,,,,,,,,,,,,1
 OhioROhioR_water consumption,NoReported,,,,,,,,,,,,,,,,,,1
 OhioROhioR_water withdrawals,NoReported,,,,,,,,,,,,,,,,,,1
 OhioR_desalinated water,NoReported,,,,,,,,,,,,,,,,,,1

@@ -11,8 +11,10 @@ nonbio_diff;get_nonbio_tmp;;CO2 emissions by sector (excluding resource producti
 co2_emiss;get_co2_emiss;nonbio_diff;CO2 emissions by tech (excluding resource production),CO2 emissions by resource production,CO2 emissions by region
 LUC_emiss;get_lu_co2;;LUC emissions by region
 co2_emissions_clean;get_co2_emissions;co2_emiss,LUC_emiss;
-nonco2_clean;get_nonco2_emissions;;nonCO2 emissions by subsector (excluding resource production),nonCO2 emissions by resource production
-f_gas_clean;get_fgas;;nonCO2 emissions by region
+nonco2_clean;get_nonco2_emissions;f_gases_total,f_gases_hfc,f_gases_pfc;nonCO2 emissions by subsector (excluding resource production),nonCO2 emissions by resource production
+f_gases_total;get_fgas;;nonCO2 emissions by region
+f_gases_hfc;get_fgas;;nonCO2 emissions by region
+f_gases_pfc;get_fgas;;nonCO2 emissions by region
 ghg_all;get_ghg;LUC_emiss;nonCO2 emissions by region
 kyoto_gases_clean;get_kyoto_gases;LUC_emiss;nonCO2 emissions by subsector (excluding resource production),nonCO2 emissions by resource production,CO2 emissions by tech (excluding resource production)
 co2_sequestration_clean;get_co2_sequestration;LUC_emiss,refliq_bioshare;CO2 sequestration by tech
