@@ -329,6 +329,6 @@ HFC236fa,,industrial processes,solvents,Emissions|Kyoto Gases,Emissions|Kyoto Ga
 CO2,,H2 LDV,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Hydrogen,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 CO2,,H2 MHDV,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Hydrogen,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
 CO2,,LH2,,Emissions|Kyoto Gases,Emissions|Kyoto Gases|Energy,Emissions|Kyoto Gases|Energy|Supply,Emissions|Kyoto Gases|Energy|Supply|Hydrogen,,,,,,,,Emissions|Kyoto Gases|Energy and Industrial Processes,1
-H2,,H2 LDV,,Emissions|Kyoto Gases,,,,,,,,,,,,1
-H2,,H2 MHDV,,Emissions|Kyoto Gases,,,,,,,,,,,,1
-H2,,LH2,,Emissions|Kyoto Gases,,,,,,,,,,,,1
+H2,,H2 LDV,,NoReported,,,,,,,,,,,,1
+H2,,H2 MHDV,,NoReported,,,,,,,,,,,,1
+H2,,LH2,,NoReported,,,,,,,,,,,,1
