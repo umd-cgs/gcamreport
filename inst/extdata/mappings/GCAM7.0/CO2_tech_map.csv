@@ -30,6 +30,7 @@ N fertilizer,gas,gas CCS,Emissions|CO2,Emissions|CO2|Energy and Industrial Proce
 N fertilizer,hydrogen,hydrogen,Emissions|CO2,Emissions|CO2|Energy and Industrial Processes,Emissions|CO2|Energy,Emissions|CO2|Energy|Demand,Emissions|CO2|Energy|Demand|Industry,Emissions|CO2|Energy|Demand|Industry|Chemicals,Emissions|CO2|Energy|Demand|Industry|Chemicals|Ammonia,,,3.666667
 N fertilizer,refined liquids,refined liquids,Emissions|CO2,Emissions|CO2|Energy and Industrial Processes,Emissions|CO2|Energy,Emissions|CO2|Energy|Demand,Emissions|CO2|Energy|Demand|Industry,Emissions|CO2|Energy|Demand|Industry|Chemicals,Emissions|CO2|Energy|Demand|Industry|Chemicals|Ammonia,,,3.666667
 backup_electricity,gas,gas (steam/CT),Emissions|CO2,Emissions|CO2|Energy and Industrial Processes,Emissions|CO2|Energy,Emissions|CO2|Energy|Supply,Emissions|CO2|Energy|Supply|Electricity,,,,,3.666667
+ccs dynamic-capacity,ccs dynamic-capacity,ccs dynamic-capacity,noReported,,,,,,,,,3.666667
 cement,,,Emissions|CO2,Emissions|CO2|Energy and Industrial Processes,Emissions|CO2|Industrial Processes,Emissions|CO2|Industrial Processes|Cement,,,,,,3.666667
 cement,cement,cement,Emissions|CO2,Emissions|CO2|Energy and Industrial Processes,Emissions|CO2|Industrial Processes,Emissions|CO2|Industrial Processes|Cement,,,,,,3.666667
 cement,cement,cement CCS,Emissions|CO2,Emissions|CO2|Energy and Industrial Processes,Emissions|CO2|Industrial Processes,Emissions|CO2|Industrial Processes|Cement,,,,,,3.666667
