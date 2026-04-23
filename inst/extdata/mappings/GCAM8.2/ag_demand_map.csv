@@ -1,4 +1,4 @@
-# Agricultural demand balance
+# Agricultural demand balance,,,,,,,,,,
 input,sector,var1,var2,var3,var4,var5,var6,var7,var8,unit_conv
 regional corn,FeedCrops,Agricultural Demand,Agricultural Demand|Crops,Agricultural Demand|Crops|Feed,Agricultural Demand|Crops|Feed|Cereals,,,,,1
 regional fibercrop,FeedCrops,Agricultural Demand,Agricultural Demand|Crops,Agricultural Demand|Crops|Feed,Agricultural Demand|Crops|Feed|Other Crops,,,,,1
@@ -99,5 +99,6 @@ Forest,regional industrial_roundwood,NoReported,,,,,,,,1
 Forest,traded industrial_roundwood,NoReported,,,,,,,,1
 regional sawnwood,NonFoodDemand_sawnwood,NoReported,,,,,,,,1
 regional woodpulp,woodpulp_energy,NoReported,,,,,,,,1
+regional woodpulp,NonFoodDemand_woodpulp,NoReported,,,,,,,,1
 ,woodpulp_energy,NoReported,,,,,,,,1
 total biomass,regional biomass,Agricultural Demand,Agricultural Demand|Crops,Agricultural Demand|Crops|Bioenergy,Agricultural Demand|Crops|Bioenergy|2nd Generation,,,,,1

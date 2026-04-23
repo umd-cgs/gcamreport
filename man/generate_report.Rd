@@ -21,7 +21,6 @@ generate_report(
   interactive = F,
   GCAM_version = "v7.1",
   GWP_version = "AR5",
-  ref_scen_name = NULL,
   queries_general_file = NULL,
   queries_nonCO2_file = NULL,
   all_tier1 = F
@@ -61,8 +60,6 @@ Note2: Global variables like "Emissions" will only account for selected variable
 \item{GCAM_version}{Main GCAM compatible version: 'v7.1' (default), 'v7.2', 'v7.0'.}
 
 \item{GWP_version}{Global Warming Potential (GWP) version: 'AR5' (default), 'AR6', or 'AR4'.}
-
-\item{ref_scen_name}{Name of the Reference scenario. Necessary to compute Expenditure variables. If left empty, `Reference` and `Baseline` tags will be looked for. If not encountered, the first scenario of your project will be considered as the Reference.}
 
 \item{queries_general_file}{Optional. Full path to a general XML query file (including file name and extension). Defaults to a general query file compatible with the specified `GCAM_version` that reports all standardized variables.}
 
