@@ -1,0 +1,86 @@
+#mapping file for GCAM regions and R5 regions,
+continent,region
+MAF,Africa_Eastern
+MAF,Africa_Northern
+MAF,Africa_Southern
+MAF,Africa_Western
+LAM,Argentina
+OECD90,Australia_NZ
+LAM,Brazil
+OECD90,Canada
+LAM,Central America and Caribbean
+REF,Central Asia
+ASIA,China
+LAM,Colombia
+OECD90,European Free Trade Association
+OECD90,EU-12
+OECD90,EU-15
+REF,Ukraine
+OECD90,Europe_Non_EU
+ASIA,India
+ASIA,Indonesia
+OECD90,Japan
+LAM,Mexico
+MAF,Middle East
+ASIA,Pakistan
+REF,Russia
+MAF,South Africa
+LAM,South America_Northern
+LAM,South America_Southern
+ASIA,South Asia
+ASIA,South Korea
+ASIA,Southeast Asia
+ASIA,Taiwan
+OECD90,USA
+World,NA
+OECD90,AL
+OECD90,AK
+OECD90,AZ
+OECD90,AR
+OECD90,CA
+OECD90,CO
+OECD90,CT
+OECD90,DC
+OECD90,DE
+OECD90,FL
+OECD90,GA
+OECD90,HI
+OECD90,ID
+OECD90,IL
+OECD90,IN
+OECD90,IA
+OECD90,KS
+OECD90,KY
+OECD90,LA
+OECD90,ME
+OECD90,MD
+OECD90,MA
+OECD90,MI
+OECD90,MN
+OECD90,MS
+OECD90,MO
+OECD90,MT
+OECD90,NE
+OECD90,NV
+OECD90,NH
+OECD90,NJ
+OECD90,NM
+OECD90,NY
+OECD90,NC
+OECD90,ND
+OECD90,OH
+OECD90,OK
+OECD90,OR
+OECD90,PA
+OECD90,RI
+OECD90,SC
+OECD90,SD
+OECD90,TN
+OECD90,TX
+OECD90,UT
+OECD90,VT
+OECD90,VA
+OECD90,WA
+OECD90,WV
+OECD90,WI
+OECD90,WY
