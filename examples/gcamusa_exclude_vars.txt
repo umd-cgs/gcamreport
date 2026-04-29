@@ -1,0 +1,1056 @@
+Agricultural Demand
+Agricultural Demand|Crops
+Agricultural Demand|Crops|Bioenergy
+Agricultural Demand|Crops|Bioenergy|1st Generation
+Agricultural Demand|Crops|Feed
+Agricultural Demand|Crops|Feed|Cereals
+Agricultural Demand|Crops|Feed|Oil Crops
+Agricultural Demand|Crops|Feed|Other Crops
+Agricultural Demand|Crops|Feed|Sugar Crops
+Agricultural Demand|Crops|Food
+Agricultural Demand|Crops|Food|Cereals
+Agricultural Demand|Crops|Food|Oil Crops
+Agricultural Demand|Crops|Food|Other Crops
+Agricultural Demand|Crops|Food|Sugar Crops
+Agricultural Demand|Crops|Other
+Agricultural Demand|Livestock
+Agricultural Demand|Livestock|Food
+Agricultural Demand|Livestock|Food|Non-Ruminant
+Agricultural Demand|Livestock|Food|Non-Ruminant|Meat
+Agricultural Demand|Livestock|Food|Non-Ruminant|Meat|Pig
+Agricultural Demand|Livestock|Food|Non-Ruminant|Meat|Poultry
+Agricultural Demand|Livestock|Food|Ruminant
+Agricultural Demand|Livestock|Food|Ruminant|Dairy
+Agricultural Demand|Livestock|Food|Ruminant|Meat
+Agricultural Demand|Livestock|Other
+Agricultural Production
+Agricultural Production|Crops
+Agricultural Production|Crops|Cereals
+Agricultural Production|Crops|Energy Crops
+Agricultural Production|Crops|Oil Crops
+Agricultural Production|Crops|Other Crops
+Agricultural Production|Crops|Sugar Crops
+Agricultural Production|Livestock
+Agricultural Production|Livestock|Non-Ruminant
+Agricultural Production|Livestock|Non-Ruminant|Meat
+Agricultural Production|Livestock|Non-Ruminant|Meat|Pig
+Agricultural Production|Livestock|Non-Ruminant|Meat|Poultry
+Agricultural Production|Livestock|Ruminant
+Agricultural Production|Livestock|Ruminant|Dairy
+Agricultural Production|Livestock|Ruminant|Meat
+Agricultural Production|Non-Energy
+Carbon Capture
+Carbon Capture|Direct Air Capture
+Carbon Capture|Energy
+Carbon Capture|Energy|Biomass
+Carbon Capture|Energy|Demand
+Carbon Capture|Energy|Demand|Biomass
+Carbon Capture|Energy|Demand|Fossil
+Carbon Capture|Energy|Demand|Industry
+Carbon Capture|Energy|Demand|Industry|Biomass
+Carbon Capture|Energy|Demand|Industry|Chemicals
+Carbon Capture|Energy|Demand|Industry|Chemicals|Biomass
+Carbon Capture|Energy|Demand|Industry|Chemicals|Fossil
+Carbon Capture|Energy|Demand|Industry|Fossil
+Carbon Capture|Energy|Demand|Industry|Iron and Steel
+Carbon Capture|Energy|Demand|Industry|Iron and Steel|Biomass
+Carbon Capture|Energy|Demand|Industry|Iron and Steel|Fossil
+Carbon Capture|Energy|Demand|Industry|Non-Ferrous Metals
+Carbon Capture|Energy|Demand|Industry|Non-Ferrous Metals|Biomass
+Carbon Capture|Energy|Demand|Industry|Non-Ferrous Metals|Fossil
+Carbon Capture|Energy|Demand|Industry|Non-Metallic Minerals
+Carbon Capture|Energy|Demand|Industry|Non-Metallic Minerals|Biomass
+Carbon Capture|Energy|Demand|Industry|Non-Metallic Minerals|Fossil
+Carbon Capture|Energy|Demand|Industry|Other Sector
+Carbon Capture|Energy|Demand|Industry|Other Sector|Biomass
+Carbon Capture|Energy|Demand|Industry|Other Sector|Fossil
+Carbon Capture|Energy|Fossil
+Carbon Capture|Energy|Supply
+Carbon Capture|Energy|Supply|Biomass
+Carbon Capture|Energy|Supply|Electricity
+Carbon Capture|Energy|Supply|Electricity|Biomass
+Carbon Capture|Energy|Supply|Electricity|Fossil
+Carbon Capture|Energy|Supply|Fossil
+Carbon Capture|Energy|Supply|Hydrogen
+Carbon Capture|Energy|Supply|Hydrogen|Biomass
+Carbon Capture|Energy|Supply|Hydrogen|Fossil
+Carbon Capture|Energy|Supply|Liquids
+Carbon Capture|Energy|Supply|Liquids|Biomass
+Carbon Capture|Energy|Supply|Liquids|Fossil
+Carbon Capture|Geological Storage
+Carbon Capture|Geological Storage|Direct Air Capture
+Carbon Capture|Geological Storage|Other Sources
+Carbon Capture|Industrial Processes
+Carbon Capture|Industrial Processes|Chemicals
+Carbon Capture|Industrial Processes|Iron and Steel
+Carbon Capture|Industrial Processes|Non-Ferrous Metals
+Carbon Capture|Industrial Processes|Non-Metallic Minerals
+Carbon Capture|Industrial Processes|Other Sector
+Carbon Capture|Industrial Processes|Pulp and Paper
+Carbon Capture|Other Sources
+Carbon Capture|Utilization
+Carbon Capture|Utilization|Liquids
+Carbon Removal
+Carbon Removal|Enhanced Weathering
+Carbon Removal|Geological Storage
+Carbon Removal|Geological Storage|Biomass
+Carbon Removal|Geological Storage|Direct Air Capture
+Carbon Removal|Land Use
+Carbon Removal|Land Use|Re/Afforestation
+Carbon Removal|Long-Lived Materials
+Carbon Removal|Long-Lived Materials|Other
+Emissions|BC
+Emissions|BC|AFOLU
+Emissions|BC|AFOLU [NGHGI]
+Emissions|BC|AFOLU|Agricultural Waste Burning
+Emissions|BC|AFOLU|Agriculture
+Emissions|BC|AFOLU|Agriculture|Livestock
+Emissions|BC|AFOLU|Agriculture|Livestock|Enteric Fermentation
+Emissions|BC|AFOLU|Agriculture|Rice
+Emissions|BC|AFOLU|Land
+Emissions|BC|AFOLU|Land|Fires
+Emissions|BC|AFOLU|Land|Fires|Forest Burning
+Emissions|BC|AFOLU|Land|Other
+Emissions|BC|Energy
+Emissions|BC|Energy and Industrial Processes
+Emissions|BC|Energy|Demand
+Emissions|BC|Energy|Demand|AFOFI
+Emissions|BC|Energy|Demand|AFOFI|Biomass
+Emissions|BC|Energy|Demand|AFOFI|Biomass|Traditional
+Emissions|BC|Energy|Demand|Bunkers
+Emissions|BC|Energy|Demand|Bunkers|International Aviation
+Emissions|BC|Energy|Demand|Bunkers|International Shipping
+Emissions|BC|Energy|Demand|Commercial
+Emissions|BC|Energy|Demand|Commercial|Biomass
+Emissions|BC|Energy|Demand|Commercial|Biomass|Traditional
+Emissions|BC|Energy|Demand|Industry
+Emissions|BC|Energy|Demand|Industry|Biomass
+Emissions|BC|Energy|Demand|Industry|Biomass|Traditional
+Emissions|BC|Energy|Demand|Other Sector
+Emissions|BC|Energy|Demand|Other Sector|Biomass
+Emissions|BC|Energy|Demand|Other Sector|Biomass|Traditional
+Emissions|BC|Energy|Demand|Residential
+Emissions|BC|Energy|Demand|Residential and Commercial
+Emissions|BC|Energy|Demand|Residential and Commercial and AFOFI
+Emissions|BC|Energy|Demand|Residential and Commercial and AFOFI|Biomass
+Emissions|BC|Energy|Demand|Residential and Commercial and AFOFI|Biomass|Traditional
+Emissions|BC|Energy|Demand|Residential and Commercial|Biomass
+Emissions|BC|Energy|Demand|Residential and Commercial|Biomass|Traditional
+Emissions|BC|Energy|Demand|Residential|Biomass
+Emissions|BC|Energy|Demand|Residential|Biomass|Traditional
+Emissions|BC|Energy|Demand|Transportation
+Emissions|BC|Energy|Demand|Transportation|Bus
+Emissions|BC|Energy|Demand|Transportation|Domestic Aviation
+Emissions|BC|Energy|Demand|Transportation|Domestic Shipping
+Emissions|BC|Energy|Demand|Transportation|Light-Duty Vehicle
+Emissions|BC|Energy|Demand|Transportation|Light-Duty Vehicle|Large Car and SUV
+Emissions|BC|Energy|Demand|Transportation|Light-Duty Vehicle|Midsize Car
+Emissions|BC|Energy|Demand|Transportation|Light-Duty Vehicle|Subcompact Car
+Emissions|BC|Energy|Demand|Transportation|Light-Duty Vehicle|Two-Wheeler
+Emissions|BC|Energy|Demand|Transportation|Rail
+Emissions|BC|Energy|Demand|Transportation|Truck
+Emissions|BC|Energy|Supply
+Emissions|BC|Energy|Supply|Biomass
+Emissions|BC|Energy|Supply|Biomass|Traditional
+Emissions|BC|Energy|Supply|Electricity
+Emissions|BC|Energy|Supply|Fugitive
+Emissions|BC|Energy|Supply|Gases
+Emissions|BC|Energy|Supply|Gases|Biomass
+Emissions|BC|Energy|Supply|Heat
+Emissions|BC|Energy|Supply|Hydrogen
+Emissions|BC|Energy|Supply|Liquids
+Emissions|BC|Energy|Supply|Other
+Emissions|BC|Energy|Supply|Solids
+Emissions|BC|Energy|Supply|Solids|Biomass
+Emissions|BC|Industrial Processes
+Emissions|BC|Industrial Processes|Cement
+Emissions|BC|Industrial Processes|Chemicals
+Emissions|BC|Industrial Processes|Chemicals|Ammonia
+Emissions|BC|Industrial Processes|Iron and Steel
+Emissions|BC|Industrial Processes|Non-Ferrous Metals
+Emissions|BC|Industrial Processes|Other Sector
+Emissions|BC|Industrial Processes|Pulp and Paper
+Emissions|BC|Other
+Emissions|BC|Other Capture and Removal
+Emissions|BC|Product Use
+Emissions|BC|Product Use|Solvents
+Emissions|BC|Waste
+Emissions|C2F6
+Emissions|C2F6|AFOLU
+Emissions|C2F6|AFOLU [NGHGI]
+Emissions|C2F6|AFOLU|Agricultural Waste Burning
+Emissions|C2F6|AFOLU|Agriculture
+Emissions|C2F6|AFOLU|Agriculture|Livestock
+Emissions|C2F6|AFOLU|Agriculture|Livestock|Enteric Fermentation
+Emissions|C2F6|AFOLU|Agriculture|Rice
+Emissions|C2F6|AFOLU|Land
+Emissions|C2F6|AFOLU|Land|Fires
+Emissions|C2F6|AFOLU|Land|Fires|Forest Burning
+Emissions|C2F6|AFOLU|Land|Other
+Emissions|C2F6|Energy
+Emissions|C2F6|Energy and Industrial Processes
+Emissions|C2F6|Energy|Demand
+Emissions|C2F6|Energy|Demand|AFOFI
+Emissions|C2F6|Energy|Demand|AFOFI|Biomass
+Emissions|C2F6|Energy|Demand|AFOFI|Biomass|Traditional
+Emissions|C2F6|Energy|Demand|Bunkers
+Emissions|C2F6|Energy|Demand|Bunkers|International Aviation
+Emissions|C2F6|Energy|Demand|Bunkers|International Shipping
+Emissions|C2F6|Energy|Demand|Commercial
+Emissions|C2F6|Energy|Demand|Commercial|Biomass
+Emissions|C2F6|Energy|Demand|Commercial|Biomass|Traditional
+Emissions|C2F6|Energy|Demand|Industry
+Emissions|C2F6|Energy|Demand|Industry|Biomass
+Emissions|C2F6|Energy|Demand|Industry|Biomass|Traditional
+Emissions|C2F6|Energy|Demand|Other Sector
+Emissions|C2F6|Energy|Demand|Other Sector|Biomass
+Emissions|C2F6|Energy|Demand|Other Sector|Biomass|Traditional
+Emissions|C2F6|Energy|Demand|Residential
+Emissions|C2F6|Energy|Demand|Residential and Commercial
+Emissions|C2F6|Energy|Demand|Residential and Commercial and AFOFI
+Emissions|C2F6|Energy|Demand|Residential and Commercial and AFOFI|Biomass
+Emissions|C2F6|Energy|Demand|Residential and Commercial and AFOFI|Biomass|Traditional
+Emissions|C2F6|Energy|Demand|Residential and Commercial|Biomass
+Emissions|C2F6|Energy|Demand|Residential and Commercial|Biomass|Traditional
+Emissions|C2F6|Energy|Demand|Residential|Biomass
+Emissions|C2F6|Energy|Demand|Residential|Biomass|Traditional
+Emissions|C2F6|Energy|Demand|Transportation
+Emissions|C2F6|Energy|Demand|Transportation|Bus
+Emissions|C2F6|Energy|Demand|Transportation|Domestic Aviation
+Emissions|C2F6|Energy|Demand|Transportation|Domestic Shipping
+Emissions|C2F6|Energy|Demand|Transportation|Light-Duty Vehicle
+Emissions|C2F6|Energy|Demand|Transportation|Light-Duty Vehicle|Large Car and SUV
+Emissions|C2F6|Energy|Demand|Transportation|Light-Duty Vehicle|Midsize Car
+Emissions|C2F6|Energy|Demand|Transportation|Light-Duty Vehicle|Subcompact Car
+Emissions|C2F6|Energy|Demand|Transportation|Light-Duty Vehicle|Two-Wheeler
+Emissions|C2F6|Energy|Demand|Transportation|Rail
+Emissions|C2F6|Energy|Demand|Transportation|Truck
+Emissions|C2F6|Energy|Supply
+Emissions|C2F6|Energy|Supply|Biomass
+Emissions|C2F6|Energy|Supply|Biomass|Traditional
+Emissions|C2F6|Energy|Supply|Electricity
+Emissions|C2F6|Energy|Supply|Fugitive
+Emissions|C2F6|Energy|Supply|Gases
+Emissions|C2F6|Energy|Supply|Gases|Biomass
+Emissions|C2F6|Energy|Supply|Heat
+Emissions|C2F6|Energy|Supply|Hydrogen
+Emissions|C2F6|Energy|Supply|Liquids
+Emissions|C2F6|Energy|Supply|Other
+Emissions|C2F6|Energy|Supply|Solids
+Emissions|C2F6|Energy|Supply|Solids|Biomass
+Emissions|C2F6|Industrial Processes
+Emissions|C2F6|Industrial Processes|Cement
+Emissions|C2F6|Industrial Processes|Chemicals
+Emissions|C2F6|Industrial Processes|Chemicals|Ammonia
+Emissions|C2F6|Industrial Processes|Iron and Steel
+Emissions|C2F6|Industrial Processes|Non-Ferrous Metals
+Emissions|C2F6|Industrial Processes|Other Sector
+Emissions|C2F6|Industrial Processes|Pulp and Paper
+Emissions|C2F6|Other
+Emissions|C2F6|Other Capture and Removal
+Emissions|C2F6|Product Use
+Emissions|C2F6|Product Use|Solvents
+Emissions|C2F6|Waste
+Emissions|CF4
+Emissions|CFC
+Emissions|CH4
+Emissions|CH4|AFOLU
+Emissions|CH4|AFOLU [NGHGI]
+Emissions|CH4|AFOLU|Agricultural Waste Burning
+Emissions|CH4|AFOLU|Agriculture
+Emissions|CH4|AFOLU|Agriculture|Livestock
+Emissions|CH4|AFOLU|Agriculture|Livestock|Enteric Fermentation
+Emissions|CH4|AFOLU|Agriculture|Rice
+Emissions|CH4|AFOLU|Land
+Emissions|CH4|AFOLU|Land|Fires
+Emissions|CH4|AFOLU|Land|Fires|Forest Burning
+Emissions|CH4|AFOLU|Land|Other
+Emissions|CH4|Energy
+Emissions|CH4|Energy and Industrial Processes
+Emissions|CH4|Energy|Demand
+Emissions|CH4|Energy|Demand|AFOFI
+Emissions|CH4|Energy|Demand|AFOFI|Biomass
+Emissions|CH4|Energy|Demand|AFOFI|Biomass|Traditional
+Emissions|CH4|Energy|Demand|Bunkers
+Emissions|CH4|Energy|Demand|Bunkers|International Aviation
+Emissions|CH4|Energy|Demand|Bunkers|International Shipping
+Emissions|CH4|Energy|Demand|Commercial
+Emissions|CH4|Energy|Demand|Commercial|Biomass
+Emissions|CH4|Energy|Demand|Commercial|Biomass|Traditional
+Emissions|CH4|Energy|Demand|Industry
+Emissions|CH4|Energy|Demand|Industry|Biomass
+Emissions|CH4|Energy|Demand|Industry|Biomass|Traditional
+Emissions|CH4|Energy|Demand|Other Sector
+Emissions|CH4|Energy|Demand|Other Sector|Biomass
+Emissions|CH4|Energy|Demand|Other Sector|Biomass|Traditional
+Emissions|CH4|Energy|Demand|Residential
+Emissions|CH4|Energy|Demand|Residential and Commercial
+Emissions|CH4|Energy|Demand|Residential and Commercial and AFOFI
+Emissions|CH4|Energy|Demand|Residential and Commercial and AFOFI|Biomass
+Emissions|CH4|Energy|Demand|Residential and Commercial and AFOFI|Biomass|Traditional
+Emissions|CH4|Energy|Demand|Residential and Commercial|Biomass
+Emissions|CH4|Energy|Demand|Residential and Commercial|Biomass|Traditional
+Emissions|CH4|Energy|Demand|Residential|Biomass
+Emissions|CH4|Energy|Demand|Residential|Biomass|Traditional
+Emissions|CH4|Energy|Demand|Transportation
+Emissions|CH4|Energy|Demand|Transportation|Bus
+Emissions|CH4|Energy|Demand|Transportation|Domestic Aviation
+Emissions|CH4|Energy|Demand|Transportation|Domestic Shipping
+Emissions|CH4|Energy|Demand|Transportation|Light-Duty Vehicle
+Emissions|CH4|Energy|Demand|Transportation|Light-Duty Vehicle|Large Car and SUV
+Emissions|CH4|Energy|Demand|Transportation|Light-Duty Vehicle|Midsize Car
+Emissions|CH4|Energy|Demand|Transportation|Light-Duty Vehicle|Subcompact Car
+Emissions|CH4|Energy|Demand|Transportation|Light-Duty Vehicle|Two-Wheeler
+Emissions|CH4|Energy|Demand|Transportation|Rail
+Emissions|CH4|Energy|Demand|Transportation|Truck
+Emissions|CH4|Energy|Supply
+Emissions|CH4|Energy|Supply|Biomass
+Emissions|CH4|Energy|Supply|Biomass|Traditional
+Emissions|CH4|Energy|Supply|Electricity
+Emissions|CH4|Energy|Supply|Fugitive
+Emissions|CH4|Energy|Supply|Gases
+Emissions|CH4|Energy|Supply|Gases|Biomass
+Emissions|CH4|Energy|Supply|Heat
+Emissions|CH4|Energy|Supply|Hydrogen
+Emissions|CH4|Energy|Supply|Liquids
+Emissions|CH4|Energy|Supply|Other
+Emissions|CH4|Energy|Supply|Solids
+Emissions|CH4|Energy|Supply|Solids|Biomass
+Emissions|CH4|Industrial Processes
+Emissions|CH4|Industrial Processes|Cement
+Emissions|CH4|Industrial Processes|Chemicals
+Emissions|CH4|Industrial Processes|Chemicals|Ammonia
+Emissions|CH4|Industrial Processes|Iron and Steel
+Emissions|CH4|Industrial Processes|Non-Ferrous Metals
+Emissions|CH4|Industrial Processes|Other Sector
+Emissions|CH4|Industrial Processes|Pulp and Paper
+Emissions|CH4|Other
+Emissions|CH4|Other Capture and Removal
+Emissions|CH4|Product Use
+Emissions|CH4|Product Use|Solvents
+Emissions|CH4|Waste
+Emissions|CO
+Emissions|CO|AFOLU
+Emissions|CO|AFOLU [NGHGI]
+Emissions|CO|AFOLU|Agricultural Waste Burning
+Emissions|CO|AFOLU|Agriculture
+Emissions|CO|AFOLU|Agriculture|Livestock
+Emissions|CO|AFOLU|Agriculture|Livestock|Enteric Fermentation
+Emissions|CO|AFOLU|Agriculture|Rice
+Emissions|CO|AFOLU|Land
+Emissions|CO|AFOLU|Land|Fires
+Emissions|CO|AFOLU|Land|Fires|Forest Burning
+Emissions|CO|AFOLU|Land|Other
+Emissions|CO|Energy
+Emissions|CO|Energy and Industrial Processes
+Emissions|CO|Energy|Demand
+Emissions|CO|Energy|Demand|AFOFI
+Emissions|CO|Energy|Demand|AFOFI|Biomass
+Emissions|CO|Energy|Demand|AFOFI|Biomass|Traditional
+Emissions|CO|Energy|Demand|Bunkers
+Emissions|CO|Energy|Demand|Bunkers|International Aviation
+Emissions|CO|Energy|Demand|Bunkers|International Shipping
+Emissions|CO|Energy|Demand|Commercial
+Emissions|CO|Energy|Demand|Commercial|Biomass
+Emissions|CO|Energy|Demand|Commercial|Biomass|Traditional
+Emissions|CO|Energy|Demand|Industry
+Emissions|CO|Energy|Demand|Industry|Biomass
+Emissions|CO|Energy|Demand|Industry|Biomass|Traditional
+Emissions|CO|Energy|Demand|Other Sector
+Emissions|CO|Energy|Demand|Other Sector|Biomass
+Emissions|CO|Energy|Demand|Other Sector|Biomass|Traditional
+Emissions|CO|Energy|Demand|Residential
+Emissions|CO|Energy|Demand|Residential and Commercial
+Emissions|CO|Energy|Demand|Residential and Commercial and AFOFI
+Emissions|CO|Energy|Demand|Residential and Commercial and AFOFI|Biomass
+Emissions|CO|Energy|Demand|Residential and Commercial and AFOFI|Biomass|Traditional
+Emissions|CO|Energy|Demand|Residential and Commercial|Biomass
+Emissions|CO|Energy|Demand|Residential and Commercial|Biomass|Traditional
+Emissions|CO|Energy|Demand|Residential|Biomass
+Emissions|CO|Energy|Demand|Residential|Biomass|Traditional
+Emissions|CO|Energy|Demand|Transportation
+Emissions|CO|Energy|Demand|Transportation|Bus
+Emissions|CO|Energy|Demand|Transportation|Domestic Aviation
+Emissions|CO|Energy|Demand|Transportation|Domestic Shipping
+Emissions|CO|Energy|Demand|Transportation|Light-Duty Vehicle
+Emissions|CO|Energy|Demand|Transportation|Light-Duty Vehicle|Large Car and SUV
+Emissions|CO|Energy|Demand|Transportation|Light-Duty Vehicle|Midsize Car
+Emissions|CO|Energy|Demand|Transportation|Light-Duty Vehicle|Subcompact Car
+Emissions|CO|Energy|Demand|Transportation|Light-Duty Vehicle|Two-Wheeler
+Emissions|CO|Energy|Demand|Transportation|Rail
+Emissions|CO|Energy|Demand|Transportation|Truck
+Emissions|CO|Energy|Supply
+Emissions|CO|Energy|Supply|Biomass
+Emissions|CO|Energy|Supply|Biomass|Traditional
+Emissions|CO|Energy|Supply|Electricity
+Emissions|CO|Energy|Supply|Fugitive
+Emissions|CO|Energy|Supply|Gases
+Emissions|CO|Energy|Supply|Gases|Biomass
+Emissions|CO|Energy|Supply|Heat
+Emissions|CO|Energy|Supply|Hydrogen
+Emissions|CO|Energy|Supply|Liquids
+Emissions|CO|Energy|Supply|Other
+Emissions|CO|Energy|Supply|Solids
+Emissions|CO|Energy|Supply|Solids|Biomass
+Emissions|CO|Industrial Processes
+Emissions|CO|Industrial Processes|Cement
+Emissions|CO|Industrial Processes|Chemicals
+Emissions|CO|Industrial Processes|Chemicals|Ammonia
+Emissions|CO|Industrial Processes|Iron and Steel
+Emissions|CO|Industrial Processes|Non-Ferrous Metals
+Emissions|CO|Industrial Processes|Other Sector
+Emissions|CO|Industrial Processes|Pulp and Paper
+Emissions|CO|Other
+Emissions|CO|Other Capture and Removal
+Emissions|CO|Product Use
+Emissions|CO|Product Use|Solvents
+Emissions|CO|Waste
+Emissions|CO2
+Emissions|CO2|AFOLU
+Emissions|CO2|AFOLU [NGHGI]
+Emissions|CO2|AFOLU|Agricultural Waste Burning
+Emissions|CO2|AFOLU|Land|Fires
+Emissions|CO2|AFOLU|Land|Fires|Forest Burning
+Emissions|CO2|AFOLU|Land|Other
+Emissions|CO2|Energy
+Emissions|CO2|Energy and Industrial Processes
+Emissions|CO2|Energy|Demand
+Emissions|CO2|Energy|Demand|AFOFI
+Emissions|CO2|Energy|Demand|Bunkers
+Emissions|CO2|Energy|Demand|Bunkers|International Aviation
+Emissions|CO2|Energy|Demand|Bunkers|International Shipping
+Emissions|CO2|Energy|Demand|Commercial
+Emissions|CO2|Energy|Demand|Industry
+Emissions|CO2|Energy|Demand|Industry|Chemicals
+Emissions|CO2|Energy|Demand|Industry|Chemicals|Ammonia
+Emissions|CO2|Energy|Demand|Industry|Iron and Steel
+Emissions|CO2|Energy|Demand|Industry|Non-Ferrous Metals
+Emissions|CO2|Energy|Demand|Industry|Non-Metallic Minerals
+Emissions|CO2|Energy|Demand|Industry|Other Sector
+Emissions|CO2|Energy|Demand|Industry|Plastics
+Emissions|CO2|Energy|Demand|Other Sector
+Emissions|CO2|Energy|Demand|Residential
+Emissions|CO2|Energy|Demand|Residential and Commercial
+Emissions|CO2|Energy|Demand|Residential and Commercial and AFOFI
+Emissions|CO2|Energy|Demand|Transportation
+Emissions|CO2|Energy|Demand|Transportation|Bus
+Emissions|CO2|Energy|Demand|Transportation|Domestic Aviation
+Emissions|CO2|Energy|Demand|Transportation|Domestic Shipping
+Emissions|CO2|Energy|Demand|Transportation|Light-Duty Vehicle
+Emissions|CO2|Energy|Demand|Transportation|Light-Duty Vehicle|Large Car and SUV
+Emissions|CO2|Energy|Demand|Transportation|Light-Duty Vehicle|Midsize Car
+Emissions|CO2|Energy|Demand|Transportation|Light-Duty Vehicle|Subcompact Car
+Emissions|CO2|Energy|Demand|Transportation|Light-Duty Vehicle|Two-Wheeler
+Emissions|CO2|Energy|Demand|Transportation|Rail
+Emissions|CO2|Energy|Demand|Transportation|Truck
+Emissions|CO2|Energy|Supply
+Emissions|CO2|Energy|Supply|Electricity
+Emissions|CO2|Energy|Supply|Fugitive
+Emissions|CO2|Energy|Supply|Gases
+Emissions|CO2|Energy|Supply|Gases|Fugitive
+Emissions|CO2|Energy|Supply|Heat
+Emissions|CO2|Energy|Supply|Hydrogen
+Emissions|CO2|Energy|Supply|Liquids
+Emissions|CO2|Energy|Supply|Solids
+Emissions|CO2|Energy|Supply|Solids|Biomass
+Emissions|CO2|Industrial Processes
+Emissions|CO2|Industrial Processes|Cement
+Emissions|CO2|Other
+Emissions|CO2|Other Capture and Removal
+Emissions|CO2|Product Use|Solvents
+Emissions|CO2|Waste
+Emissions|F-Gases
+Emissions|HFC
+Emissions|HFC|HFC125
+Emissions|HFC|HFC134a
+Emissions|HFC|HFC143a
+Emissions|HFC|HFC227ea
+Emissions|HFC|HFC23
+Emissions|HFC|HFC245fa
+Emissions|HFC|HFC32
+Emissions|HFC|HFC43-10
+Emissions|Kyoto Gases
+Emissions|Kyoto Gases|AFOLU
+Emissions|Kyoto Gases|AFOLU [NGHGI]
+Emissions|Kyoto Gases|AFOLU|Agricultural Waste Burning
+Emissions|Kyoto Gases|AFOLU|Agriculture
+Emissions|Kyoto Gases|AFOLU|Agriculture|Livestock
+Emissions|Kyoto Gases|AFOLU|Agriculture|Livestock|Enteric Fermentation
+Emissions|Kyoto Gases|AFOLU|Agriculture|Rice
+Emissions|Kyoto Gases|AFOLU|Land
+Emissions|Kyoto Gases|AFOLU|Land|Fires
+Emissions|Kyoto Gases|AFOLU|Land|Fires|Forest Burning
+Emissions|Kyoto Gases|AFOLU|Land|Other
+Emissions|Kyoto Gases|Energy
+Emissions|Kyoto Gases|Energy and Industrial Processes
+Emissions|Kyoto Gases|Energy|Demand
+Emissions|Kyoto Gases|Energy|Demand|AFOFI
+Emissions|Kyoto Gases|Energy|Demand|AFOFI|Biomass
+Emissions|Kyoto Gases|Energy|Demand|AFOFI|Biomass|Traditional
+Emissions|Kyoto Gases|Energy|Demand|Bunkers
+Emissions|Kyoto Gases|Energy|Demand|Bunkers|International Aviation
+Emissions|Kyoto Gases|Energy|Demand|Bunkers|International Shipping
+Emissions|Kyoto Gases|Energy|Demand|Commercial
+Emissions|Kyoto Gases|Energy|Demand|Commercial|Biomass
+Emissions|Kyoto Gases|Energy|Demand|Commercial|Biomass|Traditional
+Emissions|Kyoto Gases|Energy|Demand|Industry
+Emissions|Kyoto Gases|Energy|Demand|Industry|Biomass
+Emissions|Kyoto Gases|Energy|Demand|Industry|Biomass|Traditional
+Emissions|Kyoto Gases|Energy|Demand|Other Sector
+Emissions|Kyoto Gases|Energy|Demand|Other Sector|Biomass
+Emissions|Kyoto Gases|Energy|Demand|Other Sector|Biomass|Traditional
+Emissions|Kyoto Gases|Energy|Demand|Residential
+Emissions|Kyoto Gases|Energy|Demand|Residential and Commercial
+Emissions|Kyoto Gases|Energy|Demand|Residential and Commercial and AFOFI
+Emissions|Kyoto Gases|Energy|Demand|Residential and Commercial and AFOFI|Biomass
+Emissions|Kyoto Gases|Energy|Demand|Residential and Commercial and AFOFI|Biomass|Traditional
+Emissions|Kyoto Gases|Energy|Demand|Residential and Commercial|Biomass
+Emissions|Kyoto Gases|Energy|Demand|Residential and Commercial|Biomass|Traditional
+Emissions|Kyoto Gases|Energy|Demand|Residential|Biomass
+Emissions|Kyoto Gases|Energy|Demand|Residential|Biomass|Traditional
+Emissions|Kyoto Gases|Energy|Demand|Transportation
+Emissions|Kyoto Gases|Energy|Demand|Transportation|Bus
+Emissions|Kyoto Gases|Energy|Demand|Transportation|Domestic Aviation
+Emissions|Kyoto Gases|Energy|Demand|Transportation|Domestic Shipping
+Emissions|Kyoto Gases|Energy|Demand|Transportation|Light-Duty Vehicle
+Emissions|Kyoto Gases|Energy|Demand|Transportation|Light-Duty Vehicle|Large Car and SUV
+Emissions|Kyoto Gases|Energy|Demand|Transportation|Light-Duty Vehicle|Midsize Car
+Emissions|Kyoto Gases|Energy|Demand|Transportation|Light-Duty Vehicle|Subcompact Car
+Emissions|Kyoto Gases|Energy|Demand|Transportation|Light-Duty Vehicle|Two-Wheeler
+Emissions|Kyoto Gases|Energy|Demand|Transportation|Rail
+Emissions|Kyoto Gases|Energy|Demand|Transportation|Truck
+Emissions|Kyoto Gases|Energy|Supply
+Emissions|Kyoto Gases|Energy|Supply|Biomass
+Emissions|Kyoto Gases|Energy|Supply|Biomass|Traditional
+Emissions|Kyoto Gases|Energy|Supply|Electricity
+Emissions|Kyoto Gases|Energy|Supply|Gases
+Emissions|Kyoto Gases|Energy|Supply|Gases|Biomass
+Emissions|Kyoto Gases|Energy|Supply|Heat
+Emissions|Kyoto Gases|Energy|Supply|Hydrogen
+Emissions|Kyoto Gases|Energy|Supply|Liquids
+Emissions|Kyoto Gases|Energy|Supply|Other
+Emissions|Kyoto Gases|Energy|Supply|Solids
+Emissions|Kyoto Gases|Energy|Supply|Solids|Biomass
+Emissions|Kyoto Gases|Energy|Supply|Solids|Coal
+Emissions|Kyoto Gases|Industrial Processes
+Emissions|Kyoto Gases|Industrial Processes|Cement
+Emissions|Kyoto Gases|Other
+Emissions|Kyoto Gases|Other Capture and Removal
+Emissions|Kyoto Gases|Product Use
+Emissions|Kyoto Gases|Product Use|Non-Energy Use
+Emissions|Kyoto Gases|Product Use|Solvents
+Emissions|Kyoto Gases|Waste
+Emissions|N2O
+Emissions|N2O|AFOLU
+Emissions|N2O|AFOLU [NGHGI]
+Emissions|N2O|AFOLU|Agricultural Waste Burning
+Emissions|N2O|AFOLU|Agriculture
+Emissions|N2O|AFOLU|Agriculture|Livestock
+Emissions|N2O|AFOLU|Agriculture|Livestock|Enteric Fermentation
+Emissions|N2O|AFOLU|Agriculture|Rice
+Emissions|N2O|AFOLU|Land
+Emissions|N2O|AFOLU|Land|Fires
+Emissions|N2O|AFOLU|Land|Fires|Forest Burning
+Emissions|N2O|AFOLU|Land|Other
+Emissions|N2O|Energy
+Emissions|N2O|Energy and Industrial Processes
+Emissions|N2O|Energy|Demand
+Emissions|N2O|Energy|Demand|AFOFI
+Emissions|N2O|Energy|Demand|AFOFI|Biomass
+Emissions|N2O|Energy|Demand|AFOFI|Biomass|Traditional
+Emissions|N2O|Energy|Demand|Bunkers
+Emissions|N2O|Energy|Demand|Bunkers|International Aviation
+Emissions|N2O|Energy|Demand|Bunkers|International Shipping
+Emissions|N2O|Energy|Demand|Commercial
+Emissions|N2O|Energy|Demand|Commercial|Biomass
+Emissions|N2O|Energy|Demand|Commercial|Biomass|Traditional
+Emissions|N2O|Energy|Demand|Industry
+Emissions|N2O|Energy|Demand|Industry|Biomass
+Emissions|N2O|Energy|Demand|Industry|Biomass|Traditional
+Emissions|N2O|Energy|Demand|Other Sector
+Emissions|N2O|Energy|Demand|Other Sector|Biomass
+Emissions|N2O|Energy|Demand|Other Sector|Biomass|Traditional
+Emissions|N2O|Energy|Demand|Residential
+Emissions|N2O|Energy|Demand|Residential and Commercial
+Emissions|N2O|Energy|Demand|Residential and Commercial and AFOFI
+Emissions|N2O|Energy|Demand|Residential and Commercial and AFOFI|Biomass
+Emissions|N2O|Energy|Demand|Residential and Commercial and AFOFI|Biomass|Traditional
+Emissions|N2O|Energy|Demand|Residential and Commercial|Biomass
+Emissions|N2O|Energy|Demand|Residential and Commercial|Biomass|Traditional
+Emissions|N2O|Energy|Demand|Residential|Biomass
+Emissions|N2O|Energy|Demand|Residential|Biomass|Traditional
+Emissions|N2O|Energy|Demand|Transportation
+Emissions|N2O|Energy|Demand|Transportation|Bus
+Emissions|N2O|Energy|Demand|Transportation|Domestic Aviation
+Emissions|N2O|Energy|Demand|Transportation|Domestic Shipping
+Emissions|N2O|Energy|Demand|Transportation|Light-Duty Vehicle
+Emissions|N2O|Energy|Demand|Transportation|Light-Duty Vehicle|Large Car and SUV
+Emissions|N2O|Energy|Demand|Transportation|Light-Duty Vehicle|Midsize Car
+Emissions|N2O|Energy|Demand|Transportation|Light-Duty Vehicle|Subcompact Car
+Emissions|N2O|Energy|Demand|Transportation|Light-Duty Vehicle|Two-Wheeler
+Emissions|N2O|Energy|Demand|Transportation|Rail
+Emissions|N2O|Energy|Demand|Transportation|Truck
+Emissions|N2O|Energy|Supply
+Emissions|N2O|Energy|Supply|Biomass
+Emissions|N2O|Energy|Supply|Biomass|Traditional
+Emissions|N2O|Energy|Supply|Electricity
+Emissions|N2O|Energy|Supply|Fugitive
+Emissions|N2O|Energy|Supply|Gases
+Emissions|N2O|Energy|Supply|Gases|Biomass
+Emissions|N2O|Energy|Supply|Heat
+Emissions|N2O|Energy|Supply|Hydrogen
+Emissions|N2O|Energy|Supply|Liquids
+Emissions|N2O|Energy|Supply|Other
+Emissions|N2O|Energy|Supply|Solids
+Emissions|N2O|Energy|Supply|Solids|Biomass
+Emissions|N2O|Industrial Processes
+Emissions|N2O|Industrial Processes|Cement
+Emissions|N2O|Industrial Processes|Chemicals
+Emissions|N2O|Industrial Processes|Chemicals|Ammonia
+Emissions|N2O|Industrial Processes|Iron and Steel
+Emissions|N2O|Industrial Processes|Non-Ferrous Metals
+Emissions|N2O|Industrial Processes|Other Sector
+Emissions|N2O|Industrial Processes|Pulp and Paper
+Emissions|N2O|Other
+Emissions|N2O|Other Capture and Removal
+Emissions|N2O|Product Use
+Emissions|N2O|Product Use|Solvents
+Emissions|N2O|Waste
+Emissions|NH3
+Emissions|NH3|AFOLU
+Emissions|NH3|AFOLU [NGHGI]
+Emissions|NH3|AFOLU|Agricultural Waste Burning
+Emissions|NH3|AFOLU|Agriculture
+Emissions|NH3|AFOLU|Agriculture|Livestock
+Emissions|NH3|AFOLU|Agriculture|Livestock|Enteric Fermentation
+Emissions|NH3|AFOLU|Agriculture|Rice
+Emissions|NH3|AFOLU|Land
+Emissions|NH3|AFOLU|Land|Fires
+Emissions|NH3|AFOLU|Land|Fires|Forest Burning
+Emissions|NH3|AFOLU|Land|Other
+Emissions|NH3|Energy
+Emissions|NH3|Energy and Industrial Processes
+Emissions|NH3|Energy|Demand
+Emissions|NH3|Energy|Demand|AFOFI
+Emissions|NH3|Energy|Demand|AFOFI|Biomass
+Emissions|NH3|Energy|Demand|AFOFI|Biomass|Traditional
+Emissions|NH3|Energy|Demand|Bunkers
+Emissions|NH3|Energy|Demand|Bunkers|International Aviation
+Emissions|NH3|Energy|Demand|Bunkers|International Shipping
+Emissions|NH3|Energy|Demand|Commercial
+Emissions|NH3|Energy|Demand|Commercial|Biomass
+Emissions|NH3|Energy|Demand|Commercial|Biomass|Traditional
+Emissions|NH3|Energy|Demand|Industry
+Emissions|NH3|Energy|Demand|Industry|Biomass
+Emissions|NH3|Energy|Demand|Industry|Biomass|Traditional
+Emissions|NH3|Energy|Demand|Other Sector
+Emissions|NH3|Energy|Demand|Other Sector|Biomass
+Emissions|NH3|Energy|Demand|Other Sector|Biomass|Traditional
+Emissions|NH3|Energy|Demand|Residential
+Emissions|NH3|Energy|Demand|Residential and Commercial
+Emissions|NH3|Energy|Demand|Residential and Commercial and AFOFI
+Emissions|NH3|Energy|Demand|Residential and Commercial and AFOFI|Biomass
+Emissions|NH3|Energy|Demand|Residential and Commercial and AFOFI|Biomass|Traditional
+Emissions|NH3|Energy|Demand|Residential and Commercial|Biomass
+Emissions|NH3|Energy|Demand|Residential and Commercial|Biomass|Traditional
+Emissions|NH3|Energy|Demand|Residential|Biomass
+Emissions|NH3|Energy|Demand|Residential|Biomass|Traditional
+Emissions|NH3|Energy|Demand|Transportation
+Emissions|NH3|Energy|Demand|Transportation|Bus
+Emissions|NH3|Energy|Demand|Transportation|Domestic Aviation
+Emissions|NH3|Energy|Demand|Transportation|Domestic Shipping
+Emissions|NH3|Energy|Demand|Transportation|Light-Duty Vehicle
+Emissions|NH3|Energy|Demand|Transportation|Light-Duty Vehicle|Large Car and SUV
+Emissions|NH3|Energy|Demand|Transportation|Light-Duty Vehicle|Midsize Car
+Emissions|NH3|Energy|Demand|Transportation|Light-Duty Vehicle|Subcompact Car
+Emissions|NH3|Energy|Demand|Transportation|Light-Duty Vehicle|Two-Wheeler
+Emissions|NH3|Energy|Demand|Transportation|Rail
+Emissions|NH3|Energy|Demand|Transportation|Truck
+Emissions|NH3|Energy|Supply
+Emissions|NH3|Energy|Supply|Biomass
+Emissions|NH3|Energy|Supply|Biomass|Traditional
+Emissions|NH3|Energy|Supply|Electricity
+Emissions|NH3|Energy|Supply|Fugitive
+Emissions|NH3|Energy|Supply|Gases
+Emissions|NH3|Energy|Supply|Gases|Biomass
+Emissions|NH3|Energy|Supply|Heat
+Emissions|NH3|Energy|Supply|Hydrogen
+Emissions|NH3|Energy|Supply|Liquids
+Emissions|NH3|Energy|Supply|Other
+Emissions|NH3|Energy|Supply|Solids
+Emissions|NH3|Energy|Supply|Solids|Biomass
+Emissions|NH3|Industrial Processes
+Emissions|NH3|Industrial Processes|Cement
+Emissions|NH3|Industrial Processes|Chemicals
+Emissions|NH3|Industrial Processes|Chemicals|Ammonia
+Emissions|NH3|Industrial Processes|Iron and Steel
+Emissions|NH3|Industrial Processes|Non-Ferrous Metals
+Emissions|NH3|Industrial Processes|Other Sector
+Emissions|NH3|Industrial Processes|Pulp and Paper
+Emissions|NH3|Other
+Emissions|NH3|Other Capture and Removal
+Emissions|NH3|Product Use
+Emissions|NH3|Product Use|Solvents
+Emissions|NH3|Waste
+Emissions|NOx
+Emissions|NOx|AFOLU
+Emissions|NOx|AFOLU [NGHGI]
+Emissions|NOx|AFOLU|Agricultural Waste Burning
+Emissions|NOx|AFOLU|Agriculture
+Emissions|NOx|AFOLU|Agriculture|Livestock
+Emissions|NOx|AFOLU|Agriculture|Livestock|Enteric Fermentation
+Emissions|NOx|AFOLU|Agriculture|Rice
+Emissions|NOx|AFOLU|Land
+Emissions|NOx|AFOLU|Land|Fires
+Emissions|NOx|AFOLU|Land|Fires|Forest Burning
+Emissions|NOx|AFOLU|Land|Other
+Emissions|NOx|Energy
+Emissions|NOx|Energy and Industrial Processes
+Emissions|NOx|Energy|Demand
+Emissions|NOx|Energy|Demand|AFOFI
+Emissions|NOx|Energy|Demand|AFOFI|Biomass
+Emissions|NOx|Energy|Demand|AFOFI|Biomass|Traditional
+Emissions|NOx|Energy|Demand|Bunkers
+Emissions|NOx|Energy|Demand|Bunkers|International Aviation
+Emissions|NOx|Energy|Demand|Bunkers|International Shipping
+Emissions|NOx|Energy|Demand|Commercial
+Emissions|NOx|Energy|Demand|Commercial|Biomass
+Emissions|NOx|Energy|Demand|Commercial|Biomass|Traditional
+Emissions|NOx|Energy|Demand|Industry
+Emissions|NOx|Energy|Demand|Industry|Biomass
+Emissions|NOx|Energy|Demand|Industry|Biomass|Traditional
+Emissions|NOx|Energy|Demand|Other Sector
+Emissions|NOx|Energy|Demand|Other Sector|Biomass
+Emissions|NOx|Energy|Demand|Other Sector|Biomass|Traditional
+Emissions|NOx|Energy|Demand|Residential
+Emissions|NOx|Energy|Demand|Residential and Commercial
+Emissions|NOx|Energy|Demand|Residential and Commercial and AFOFI
+Emissions|NOx|Energy|Demand|Residential and Commercial and AFOFI|Biomass
+Emissions|NOx|Energy|Demand|Residential and Commercial and AFOFI|Biomass|Traditional
+Emissions|NOx|Energy|Demand|Residential and Commercial|Biomass
+Emissions|NOx|Energy|Demand|Residential and Commercial|Biomass|Traditional
+Emissions|NOx|Energy|Demand|Residential|Biomass
+Emissions|NOx|Energy|Demand|Residential|Biomass|Traditional
+Emissions|NOx|Energy|Demand|Transportation
+Emissions|NOx|Energy|Demand|Transportation|Bus
+Emissions|NOx|Energy|Demand|Transportation|Domestic Aviation
+Emissions|NOx|Energy|Demand|Transportation|Domestic Shipping
+Emissions|NOx|Energy|Demand|Transportation|Light-Duty Vehicle
+Emissions|NOx|Energy|Demand|Transportation|Light-Duty Vehicle|Large Car and SUV
+Emissions|NOx|Energy|Demand|Transportation|Light-Duty Vehicle|Midsize Car
+Emissions|NOx|Energy|Demand|Transportation|Light-Duty Vehicle|Subcompact Car
+Emissions|NOx|Energy|Demand|Transportation|Light-Duty Vehicle|Two-Wheeler
+Emissions|NOx|Energy|Demand|Transportation|Rail
+Emissions|NOx|Energy|Demand|Transportation|Truck
+Emissions|NOx|Energy|Supply
+Emissions|NOx|Energy|Supply|Biomass
+Emissions|NOx|Energy|Supply|Biomass|Traditional
+Emissions|NOx|Energy|Supply|Electricity
+Emissions|NOx|Energy|Supply|Fugitive
+Emissions|NOx|Energy|Supply|Gases
+Emissions|NOx|Energy|Supply|Gases|Biomass
+Emissions|NOx|Energy|Supply|Heat
+Emissions|NOx|Energy|Supply|Hydrogen
+Emissions|NOx|Energy|Supply|Liquids
+Emissions|NOx|Energy|Supply|Other
+Emissions|NOx|Energy|Supply|Solids
+Emissions|NOx|Energy|Supply|Solids|Biomass
+Emissions|NOx|Industrial Processes
+Emissions|NOx|Industrial Processes|Cement
+Emissions|NOx|Industrial Processes|Chemicals
+Emissions|NOx|Industrial Processes|Chemicals|Ammonia
+Emissions|NOx|Industrial Processes|Iron and Steel
+Emissions|NOx|Industrial Processes|Non-Ferrous Metals
+Emissions|NOx|Industrial Processes|Other Sector
+Emissions|NOx|Industrial Processes|Pulp and Paper
+Emissions|NOx|Other
+Emissions|NOx|Other Capture and Removal
+Emissions|NOx|Product Use
+Emissions|NOx|Product Use|Solvents
+Emissions|NOx|Waste
+Emissions|OC
+Emissions|OC|AFOLU
+Emissions|OC|AFOLU [NGHGI]
+Emissions|OC|AFOLU|Agricultural Waste Burning
+Emissions|OC|AFOLU|Agriculture
+Emissions|OC|AFOLU|Agriculture|Livestock
+Emissions|OC|AFOLU|Agriculture|Livestock|Enteric Fermentation
+Emissions|OC|AFOLU|Agriculture|Rice
+Emissions|OC|AFOLU|Land
+Emissions|OC|AFOLU|Land|Fires
+Emissions|OC|AFOLU|Land|Fires|Forest Burning
+Emissions|OC|AFOLU|Land|Other
+Emissions|OC|Energy
+Emissions|OC|Energy and Industrial Processes
+Emissions|OC|Energy|Demand
+Emissions|OC|Energy|Demand|AFOFI
+Emissions|OC|Energy|Demand|AFOFI|Biomass
+Emissions|OC|Energy|Demand|AFOFI|Biomass|Traditional
+Emissions|OC|Energy|Demand|Bunkers
+Emissions|OC|Energy|Demand|Bunkers|International Aviation
+Emissions|OC|Energy|Demand|Bunkers|International Shipping
+Emissions|OC|Energy|Demand|Commercial
+Emissions|OC|Energy|Demand|Commercial|Biomass
+Emissions|OC|Energy|Demand|Commercial|Biomass|Traditional
+Emissions|OC|Energy|Demand|Industry
+Emissions|OC|Energy|Demand|Industry|Biomass
+Emissions|OC|Energy|Demand|Industry|Biomass|Traditional
+Emissions|OC|Energy|Demand|Other Sector
+Emissions|OC|Energy|Demand|Other Sector|Biomass
+Emissions|OC|Energy|Demand|Other Sector|Biomass|Traditional
+Emissions|OC|Energy|Demand|Residential
+Emissions|OC|Energy|Demand|Residential and Commercial
+Emissions|OC|Energy|Demand|Residential and Commercial and AFOFI
+Emissions|OC|Energy|Demand|Residential and Commercial and AFOFI|Biomass
+Emissions|OC|Energy|Demand|Residential and Commercial and AFOFI|Biomass|Traditional
+Emissions|OC|Energy|Demand|Residential and Commercial|Biomass
+Emissions|OC|Energy|Demand|Residential and Commercial|Biomass|Traditional
+Emissions|OC|Energy|Demand|Residential|Biomass
+Emissions|OC|Energy|Demand|Residential|Biomass|Traditional
+Emissions|OC|Energy|Demand|Transportation
+Emissions|OC|Energy|Demand|Transportation|Bus
+Emissions|OC|Energy|Demand|Transportation|Domestic Aviation
+Emissions|OC|Energy|Demand|Transportation|Domestic Shipping
+Emissions|OC|Energy|Demand|Transportation|Light-Duty Vehicle
+Emissions|OC|Energy|Demand|Transportation|Light-Duty Vehicle|Large Car and SUV
+Emissions|OC|Energy|Demand|Transportation|Light-Duty Vehicle|Midsize Car
+Emissions|OC|Energy|Demand|Transportation|Light-Duty Vehicle|Subcompact Car
+Emissions|OC|Energy|Demand|Transportation|Light-Duty Vehicle|Two-Wheeler
+Emissions|OC|Energy|Demand|Transportation|Rail
+Emissions|OC|Energy|Demand|Transportation|Truck
+Emissions|OC|Energy|Supply
+Emissions|OC|Energy|Supply|Biomass
+Emissions|OC|Energy|Supply|Biomass|Traditional
+Emissions|OC|Energy|Supply|Electricity
+Emissions|OC|Energy|Supply|Fugitive
+Emissions|OC|Energy|Supply|Gases
+Emissions|OC|Energy|Supply|Gases|Biomass
+Emissions|OC|Energy|Supply|Heat
+Emissions|OC|Energy|Supply|Hydrogen
+Emissions|OC|Energy|Supply|Liquids
+Emissions|OC|Energy|Supply|Other
+Emissions|OC|Energy|Supply|Solids
+Emissions|OC|Energy|Supply|Solids|Biomass
+Emissions|OC|Industrial Processes
+Emissions|OC|Industrial Processes|Cement
+Emissions|OC|Industrial Processes|Chemicals
+Emissions|OC|Industrial Processes|Chemicals|Ammonia
+Emissions|OC|Industrial Processes|Iron and Steel
+Emissions|OC|Industrial Processes|Non-Ferrous Metals
+Emissions|OC|Industrial Processes|Other Sector
+Emissions|OC|Industrial Processes|Pulp and Paper
+Emissions|OC|Other
+Emissions|OC|Other Capture and Removal
+Emissions|OC|Product Use
+Emissions|OC|Product Use|Solvents
+Emissions|OC|Waste
+Emissions|PFC
+Emissions|SF6
+Emissions|Sulfur
+Emissions|Sulfur|AFOLU
+Emissions|Sulfur|AFOLU [NGHGI]
+Emissions|Sulfur|AFOLU|Agricultural Waste Burning
+Emissions|Sulfur|AFOLU|Agriculture
+Emissions|Sulfur|AFOLU|Agriculture|Livestock
+Emissions|Sulfur|AFOLU|Agriculture|Livestock|Enteric Fermentation
+Emissions|Sulfur|AFOLU|Agriculture|Rice
+Emissions|Sulfur|AFOLU|Land
+Emissions|Sulfur|AFOLU|Land|Fires
+Emissions|Sulfur|AFOLU|Land|Fires|Forest Burning
+Emissions|Sulfur|AFOLU|Land|Other
+Emissions|Sulfur|Energy
+Emissions|Sulfur|Energy and Industrial Processes
+Emissions|Sulfur|Energy|Demand
+Emissions|Sulfur|Energy|Demand|AFOFI
+Emissions|Sulfur|Energy|Demand|AFOFI|Biomass
+Emissions|Sulfur|Energy|Demand|AFOFI|Biomass|Traditional
+Emissions|Sulfur|Energy|Demand|Bunkers
+Emissions|Sulfur|Energy|Demand|Bunkers|International Aviation
+Emissions|Sulfur|Energy|Demand|Bunkers|International Shipping
+Emissions|Sulfur|Energy|Demand|Commercial
+Emissions|Sulfur|Energy|Demand|Commercial|Biomass
+Emissions|Sulfur|Energy|Demand|Commercial|Biomass|Traditional
+Emissions|Sulfur|Energy|Demand|Industry
+Emissions|Sulfur|Energy|Demand|Industry|Biomass
+Emissions|Sulfur|Energy|Demand|Industry|Biomass|Traditional
+Emissions|Sulfur|Energy|Demand|Other Sector
+Emissions|Sulfur|Energy|Demand|Other Sector|Biomass
+Emissions|Sulfur|Energy|Demand|Other Sector|Biomass|Traditional
+Emissions|Sulfur|Energy|Demand|Residential
+Emissions|Sulfur|Energy|Demand|Residential and Commercial
+Emissions|Sulfur|Energy|Demand|Residential and Commercial and AFOFI
+Emissions|Sulfur|Energy|Demand|Residential and Commercial and AFOFI|Biomass
+Emissions|Sulfur|Energy|Demand|Residential and Commercial and AFOFI|Biomass|Traditional
+Emissions|Sulfur|Energy|Demand|Residential and Commercial|Biomass
+Emissions|Sulfur|Energy|Demand|Residential and Commercial|Biomass|Traditional
+Emissions|Sulfur|Energy|Demand|Residential|Biomass
+Emissions|Sulfur|Energy|Demand|Residential|Biomass|Traditional
+Emissions|Sulfur|Energy|Demand|Transportation
+Emissions|Sulfur|Energy|Demand|Transportation|Bus
+Emissions|Sulfur|Energy|Demand|Transportation|Domestic Aviation
+Emissions|Sulfur|Energy|Demand|Transportation|Domestic Shipping
+Emissions|Sulfur|Energy|Demand|Transportation|Light-Duty Vehicle
+Emissions|Sulfur|Energy|Demand|Transportation|Light-Duty Vehicle|Large Car and SUV
+Emissions|Sulfur|Energy|Demand|Transportation|Light-Duty Vehicle|Midsize Car
+Emissions|Sulfur|Energy|Demand|Transportation|Light-Duty Vehicle|Subcompact Car
+Emissions|Sulfur|Energy|Demand|Transportation|Light-Duty Vehicle|Two-Wheeler
+Emissions|Sulfur|Energy|Demand|Transportation|Rail
+Emissions|Sulfur|Energy|Demand|Transportation|Truck
+Emissions|Sulfur|Energy|Supply
+Emissions|Sulfur|Energy|Supply|Biomass
+Emissions|Sulfur|Energy|Supply|Biomass|Traditional
+Emissions|Sulfur|Energy|Supply|Electricity
+Emissions|Sulfur|Energy|Supply|Fugitive
+Emissions|Sulfur|Energy|Supply|Gases
+Emissions|Sulfur|Energy|Supply|Gases|Biomass
+Emissions|Sulfur|Energy|Supply|Heat
+Emissions|Sulfur|Energy|Supply|Hydrogen
+Emissions|Sulfur|Energy|Supply|Liquids
+Emissions|Sulfur|Energy|Supply|Other
+Emissions|Sulfur|Energy|Supply|Solids
+Emissions|Sulfur|Energy|Supply|Solids|Biomass
+Emissions|Sulfur|Industrial Processes
+Emissions|Sulfur|Industrial Processes|Cement
+Emissions|Sulfur|Industrial Processes|Chemicals
+Emissions|Sulfur|Industrial Processes|Chemicals|Ammonia
+Emissions|Sulfur|Industrial Processes|Iron and Steel
+Emissions|Sulfur|Industrial Processes|Non-Ferrous Metals
+Emissions|Sulfur|Industrial Processes|Other Sector
+Emissions|Sulfur|Industrial Processes|Pulp and Paper
+Emissions|Sulfur|Other
+Emissions|Sulfur|Other Capture and Removal
+Emissions|Sulfur|Product Use
+Emissions|Sulfur|Product Use|Solvents
+Emissions|Sulfur|Waste
+Emissions|VOC
+Emissions|VOC|AFOLU
+Emissions|VOC|AFOLU [NGHGI]
+Emissions|VOC|AFOLU|Agricultural Waste Burning
+Emissions|VOC|AFOLU|Agriculture
+Emissions|VOC|AFOLU|Agriculture|Livestock
+Emissions|VOC|AFOLU|Agriculture|Livestock|Enteric Fermentation
+Emissions|VOC|AFOLU|Agriculture|Rice
+Emissions|VOC|AFOLU|Land
+Emissions|VOC|AFOLU|Land|Fires
+Emissions|VOC|AFOLU|Land|Fires|Forest Burning
+Emissions|VOC|AFOLU|Land|Other
+Emissions|VOC|Energy
+Emissions|VOC|Energy and Industrial Processes
+Emissions|VOC|Energy|Demand
+Emissions|VOC|Energy|Demand|AFOFI
+Emissions|VOC|Energy|Demand|AFOFI|Biomass
+Emissions|VOC|Energy|Demand|AFOFI|Biomass|Traditional
+Emissions|VOC|Energy|Demand|Bunkers
+Emissions|VOC|Energy|Demand|Bunkers|International Aviation
+Emissions|VOC|Energy|Demand|Bunkers|International Shipping
+Emissions|VOC|Energy|Demand|Commercial
+Emissions|VOC|Energy|Demand|Commercial|Biomass
+Emissions|VOC|Energy|Demand|Commercial|Biomass|Traditional
+Emissions|VOC|Energy|Demand|Industry
+Emissions|VOC|Energy|Demand|Industry|Biomass
+Emissions|VOC|Energy|Demand|Industry|Biomass|Traditional
+Emissions|VOC|Energy|Demand|Other Sector
+Emissions|VOC|Energy|Demand|Other Sector|Biomass
+Emissions|VOC|Energy|Demand|Other Sector|Biomass|Traditional
+Emissions|VOC|Energy|Demand|Residential
+Emissions|VOC|Energy|Demand|Residential and Commercial
+Emissions|VOC|Energy|Demand|Residential and Commercial and AFOFI
+Emissions|VOC|Energy|Demand|Residential and Commercial and AFOFI|Biomass
+Emissions|VOC|Energy|Demand|Residential and Commercial and AFOFI|Biomass|Traditional
+Emissions|VOC|Energy|Demand|Residential and Commercial|Biomass
+Emissions|VOC|Energy|Demand|Residential and Commercial|Biomass|Traditional
+Emissions|VOC|Energy|Demand|Residential|Biomass
+Emissions|VOC|Energy|Demand|Residential|Biomass|Traditional
+Emissions|VOC|Energy|Demand|Transportation
+Emissions|VOC|Energy|Demand|Transportation|Bus
+Emissions|VOC|Energy|Demand|Transportation|Domestic Aviation
+Emissions|VOC|Energy|Demand|Transportation|Domestic Shipping
+Emissions|VOC|Energy|Demand|Transportation|Light-Duty Vehicle
+Emissions|VOC|Energy|Demand|Transportation|Light-Duty Vehicle|Large Car and SUV
+Emissions|VOC|Energy|Demand|Transportation|Light-Duty Vehicle|Midsize Car
+Emissions|VOC|Energy|Demand|Transportation|Light-Duty Vehicle|Subcompact Car
+Emissions|VOC|Energy|Demand|Transportation|Light-Duty Vehicle|Two-Wheeler
+Emissions|VOC|Energy|Demand|Transportation|Rail
+Emissions|VOC|Energy|Demand|Transportation|Truck
+Emissions|VOC|Energy|Supply
+Emissions|VOC|Energy|Supply|Biomass
+Emissions|VOC|Energy|Supply|Biomass|Traditional
+Emissions|VOC|Energy|Supply|Electricity
+Emissions|VOC|Energy|Supply|Fugitive
+Emissions|VOC|Energy|Supply|Gases
+Emissions|VOC|Energy|Supply|Gases|Biomass
+Emissions|VOC|Energy|Supply|Heat
+Emissions|VOC|Energy|Supply|Hydrogen
+Emissions|VOC|Energy|Supply|Liquids
+Emissions|VOC|Energy|Supply|Other
+Emissions|VOC|Energy|Supply|Solids
+Emissions|VOC|Energy|Supply|Solids|Biomass
+Emissions|VOC|Industrial Processes
+Emissions|VOC|Industrial Processes|Cement
+Emissions|VOC|Industrial Processes|Chemicals
+Emissions|VOC|Industrial Processes|Chemicals|Ammonia
+Emissions|VOC|Industrial Processes|Iron and Steel
+Emissions|VOC|Industrial Processes|Non-Ferrous Metals
+Emissions|VOC|Industrial Processes|Other Sector
+Emissions|VOC|Industrial Processes|Pulp and Paper
+Emissions|VOC|Other
+Emissions|VOC|Other Capture and Removal
+Emissions|VOC|Product Use
+Emissions|VOC|Product Use|Solvents
+Emissions|VOC|Waste
+Gross Emissions|CO2
+Gross Emissions|CO2|AFOLU
+Gross Emissions|CO2|Energy
+Gross Emissions|CO2|Energy and Industrial Processes
+Gross Emissions|CO2|Energy|Demand
+Gross Emissions|CO2|Energy|Demand|Industry
+Gross Emissions|CO2|Energy|Supply
+Gross Emissions|CO2|Energy|Supply|Electricity
+Gross Emissions|CO2|Energy|Supply|Gases
+Gross Emissions|CO2|Energy|Supply|Heat
+Gross Emissions|CO2|Energy|Supply|Hydrogen
+Gross Emissions|CO2|Energy|Supply|Liquids
+Gross Emissions|CO2|Energy|Supply|Other
+Gross Emissions|CO2|Energy|Supply|Solids
+Gross Emissions|CO2|Energy|Supply|Solids|Biomass
+Gross Emissions|CO2|Energy|Supply|Solids|Coal
+Gross Emissions|CO2|Industrial Processes
+Gross Removals|CO2
+Gross Removals|CO2|AFOLU
+Price|Agriculture|Energy Crops
+Price|Agriculture|Food Products [Index]
+Price|Agriculture|Food Products|Crops [Index]
+Price|Agriculture|Food Products|Crops|Maize [Index]
+Price|Agriculture|Food Products|Crops|Rice [Index]
+Price|Agriculture|Food Products|Crops|Soybean [Index]
+Price|Agriculture|Food Products|Crops|Wheat [Index]
+Price|Agriculture|Food Products|Livestock [Index]
+Price|Carbon
+Revenue|Government
+Trade|Agriculture
+Trade|Agriculture|Crops
+Trade|Agriculture|Crops|Cereals
+Trade|Agriculture|Crops|Energy Crops
+Trade|Agriculture|Crops|Oil Crops
+Trade|Agriculture|Crops|Other Crops
+Trade|Agriculture|Crops|Sugar Crops
+Trade|Agriculture|Livestock
+Trade|Agriculture|Livestock|Non-Ruminant
+Trade|Agriculture|Livestock|Non-Ruminant|Meat
+Trade|Agriculture|Livestock|Non-Ruminant|Meat|Pig
+Trade|Agriculture|Livestock|Non-Ruminant|Meat|Poultry
+Trade|Agriculture|Livestock|Ruminant
+Trade|Agriculture|Livestock|Ruminant|Dairy
+Trade|Agriculture|Livestock|Ruminant|Meat
+Trade|Forestry|Roundwood
+Trade|Forestry|Roundwood|Industrial Roundwood
+Trade|Primary Energy|Biomass [Volume]
+Trade|Primary Energy|Coal [Volume]
+Trade|Primary Energy|Fossil [Volume]
+Trade|Primary Energy|Gas [Volume]
+Trade|Primary Energy|Oil [Volume]
+Yield|Cropland|Cereals
+Yield|Cropland|Energy Crops
+Yield|Cropland|Oil Crops
+Yield|Cropland|Other Crops
+Yield|Cropland|Sugar Crops
