@@ -484,14 +484,26 @@ local:run-input-by-primary((:scenarios:), (:regions:), (:collection:))
    <aQuery>
       <all-regions />
        <supplyDemandQuery title="elec gen by gen tech">
-         <axis1 name="technology">technology</axis1>
-         <axis2 name="Year">physical-output[@vintage]</axis2>
-         <xPath buildList="true" dataName="output" group="false" sumAll="false">*[@type='sector' (:collapse:) and
-    (@name='electricity' or @name='elect_td_bld' or @name='industrial energy use')]/
-    *[@type='subsector']/*[@type='technology' and not (@name='electricity' or @name='elect_td_bld')]/
-    *[@type='output' and (@name='electricity' or @name='elect_td_bld')]/
-    physical-output/node()</xPath>
-         <comments/>
+          <axis1 name="technology">technology</axis1>
+          <axis2 name="Year">physical-output[@vintage]</axis2>
+          <xPath buildList="true" dataName="output" group="false" sumAll="false">*[@type='sector' (:collapse:) and
+            (@name='electricity' or
+             @name='base load generation' or
+             @name='intermediate generation' or
+             @name='subpeak generation' or
+             @name='peak generation' or
+             @name='elect_td_bld' or
+             @name='industrial energy use')]/
+            *[@type='subsector']/*[@type='technology' and not (@name='electricity' or @name='elect_td_bld')]/
+            *[@type='output' (:collapse:) and
+              (@name='electricity' or
+               @name='base load generation' or
+               @name='intermediate generation' or
+               @name='subpeak generation' or
+               @name='peak generation' or
+               @name='elect_td_bld')]/
+            physical-output/node()</xPath>
+          <comments/>
      </supplyDemandQuery>
    </aQuery>
    <aQuery>
@@ -557,6 +569,18 @@ local:run-input-by-primary((:scenarios:), (:regions:), (:collection:))
          <showAttribute attribute-name="year" level="technology"/>
       </supplyDemandQuery>
    </aQuery>   
+   <aQuery>
+      <all-regions />
+      <supplyDemandQuery title="elec gen by gen tech and cooling tech (incl cogen)">
+         <axis1 name="technology">technology</axis1>
+         <axis2 name="Year">physical-output[@vintage]</axis2>
+         <xPath buildList="true" dataName="output" group="false" sumAll="false">*[@type='sector' and (@name='electricity' or @name='base load generation' or @name='intermediate generation' or @name='subpeak generation' or @name='peak generation' or @name='elect_td_bld' or @name='industrial energy use')]//
+    *[@type='subsector']//*[@type='technology' and not (@name='electricity' or @name='elect_td_bld')]/
+    *[@type='output' (:collapse:) and (@name='electricity' or @name='base load generation' or @name='intermediate generation' or @name='subpeak generation' or @name='peak generation' or @name='elect_td_bld')]/
+    physical-output/node()</xPath>
+         <comments/>
+      </supplyDemandQuery>
+   </aQuery>
    <aQuery>
       <all-regions />
       <supplyDemandQuery title="refined liquids production by region">

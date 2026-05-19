@@ -395,7 +395,17 @@ var_fun_map_GCAMUSAv8.2 <- read.csv(file.path(rawDataFolder, "inst/extdata", "ma
                              sep = ";", header = T, na.strings = c("", "NA")
 )
 
-var_fun_map_GCAMUSAv8.2$dependencies <- as.list(strsplit(var_fun_map_GCAMUSAv8.2$dependencies, ","))
-var_fun_map_GCAMUSAv8.2$queries <- as.list(strsplit(var_fun_map_GCAMUSAv8.2$queries, ","))
+# Split dependencies/queries into list-columns, stripping padding commas and whitespace
+clean_list_col <- function(x) {
+  lapply(x, function(v) {
+    if (length(v) == 0 || all(is.na(v))) return(NA_character_)
+    v <- trimws(v)
+    v <- v[!is.na(v) & nzchar(v)]
+    if (length(v) == 0) NA_character_ else v
+  })
+}
+
+var_fun_map_GCAMUSAv8.2$dependencies <- clean_list_col(strsplit(var_fun_map_GCAMUSAv8.2$dependencies, ","))
+var_fun_map_GCAMUSAv8.2$queries <- clean_list_col(strsplit(var_fun_map_GCAMUSAv8.2$queries, ","))
 use_data(var_fun_map_GCAMUSAv8.2, overwrite = T)
 

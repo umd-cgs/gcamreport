@@ -3703,9 +3703,20 @@ get_elec_gen_tech <- function(GCAM_version = "v7.1") {
   check_queries("secondary_energy_clean", GCAM_version)
   check_queries("secondary_energy_raw", GCAM_version)
 
+  # Branch: GCAM-USA uses a query with nested subsectors and cooling suffixes
+  if (grepl("USA", GCAM_version)) {
+    elec_gen <- check_inf(rgcam::getQuery(prj, "elec gen by gen tech and cooling tech (incl cogen)"),
+                          dataset_name = "elec gen by gen tech and cooling tech (incl cogen)")
+    if ("subsector...6" %in% names(elec_gen)) elec_gen <- dplyr::select(elec_gen, -`subsector...6`)
+    if ("subsector...5" %in% names(elec_gen)) elec_gen <- dplyr::rename(elec_gen, subsector = `subsector...5`)
+    elec_gen <- dplyr::mutate(elec_gen, technology = gsub(" \\(.*cooling.*\\)$", "", technology))
+  } else {
+    elec_gen <- check_inf(rgcam::getQuery(prj, "elec gen by gen tech"),
+                          dataset_name = "elec gen by gen tech")
+  }
+
   secondary_energy_raw1 <- rbind(
-    check_inf(rgcam::getQuery(prj, "elec gen by gen tech"),
-              dataset_name = "elec gen by gen tech"),
+    elec_gen,
     dplyr::bind_rows(
       check_inf(rgcam::getQuery(prj, "gas production by tech"),
                 dataset_name = "gas production by tech"),
