@@ -161,6 +161,14 @@ secondary_energy_map_GCAMUSAv8.2 <- readr::read_csv(file.path(rawDataFolder, "in
   gather_map()
 use_data(secondary_energy_map_GCAMUSAv8.2, overwrite = T)
 
+# GCAM-USA electricity generation map (legacy keys, reconciled to gcamreport variable names)
+elec_gen_map_GCAMUSAv8.2 <- readr::read_csv(file.path(rawDataFolder, "inst/extdata/mappings/GCAMUSAv8.2", "elec_gen_map.csv"),
+                                      comment = "#"
+) %>%
+  dplyr::filter(!grepl("cogen", technology)) %>%
+  gather_map()
+use_data(elec_gen_map_GCAMUSAv8.2, overwrite = T)
+
 capacity_map_GCAMUSAv8.2 <- readr::read_csv(file.path(rawDataFolder, "inst/extdata/mappings/GCAMUSAv8.2", "capacity_map.csv"),
                               comment = "#"
 ) %>%

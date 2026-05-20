@@ -583,6 +583,15 @@ local:run-input-by-primary((:scenarios:), (:regions:), (:collection:))
    </aQuery>
    <aQuery>
       <all-regions />
+      <supplyDemandQuery title="refined liquids production by subsector">
+         <axis1 name="subsector">subsector</axis1>
+         <axis2 name="Year">physical-output[@vintage]</axis2>
+         <xPath buildList="true" dataName="output" group="false" sumAll="false">*[@type='sector' and (@name='refining')]/*[@type='subsector']/*[@type='technology']/*[@type='output' (:collapse:)]/physical-output/node()</xPath>
+         <comments/>
+      </supplyDemandQuery>
+   </aQuery>
+   <aQuery>
+      <all-regions />
       <supplyDemandQuery title="refined liquids production by region">
          <axis1 name="region">region</axis1>
          <axis2 name="Year">physical-output[@vintage]</axis2>

@@ -34,8 +34,8 @@ primary_energy_clean;get_primary_energy;;primary energy consumption with CCS by 
 pe_trade_prod;get_pe_trade_prod;;resource production,purpose-grown biomass production,residue biomass production,MSW production,
 pe_trade_supply;get_pe_trade_supply;;supply of all markets,,,,
 pe_trade;get_pe_trade;pe_trade_prod,pe_trade_supply;,,,
-secondary_energy_clean;get_elec_gen_tech;secondary_solids;elec gen by gen tech and cooling tech (incl cogen),gas production by tech,hydrogen production by tech,refined liquids production by tech,district heat production by subsector (fuel)
-secondary_energy_raw;get_elec_gen_tech;secondary_solids;elec gen by gen tech,gas production by tech,hydrogen production by tech,refined liquids production by tech,district heat production by subsector (fuel)
+secondary_energy_clean;get_elec_gen_tech;secondary_solids;elec gen by gen tech and cooling tech (incl cogen),gas production by tech,hydrogen production by tech,refined liquids production by tech,district heat production by subsector (fuel),refined liquids production by subsector
+secondary_energy_raw;get_elec_gen_tech;secondary_solids;elec gen by gen tech and cooling tech (incl cogen),gas production by tech,hydrogen production by tech,refined liquids production by tech,district heat production by subsector (fuel),refined liquids production by subsector
 secondary_solids;get_secondary_solids;;inputs by sector,,,,
 fe_sector;get_fe_sector_tmp;;final energy consumption by sector and fuel,,,,
 fe_sector_raw;get_fe_sector_tmp;;final energy consumption by sector and fuel,,,,
