@@ -244,6 +244,11 @@ create_project <- function(db_path, db_name, prj_name, scenarios = NULL,
         bq$regions <- desired_regions
       }
 
+      # GCAM-USA: always query all states + USA so cross-scope queries (state-level elec gen, USA-level gas) return data
+      if (grepl("USA", GCAM_version) && !identical(desired_regions, "All")) {
+        bq$regions <- union(bq$regions, c(get(paste('gcamusa.STATES', GCAM_version, sep='_'), envir = asNamespace("gcamreport")), "USA"))
+      }
+
       # ensure that USA region is read in these queries, which are mapped only to USA
       if (bq$title %in% c('ag export to the world center (USA) (Intl. Armington competition)')) {
         table <- suppressMessages({

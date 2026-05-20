@@ -147,11 +147,14 @@ check_queries <- function(var, GCAM_version = 'v7.1') {
   var_fun_map <- get(paste('var_fun_map',GCAM_version,sep='_'), envir = asNamespace("gcamreport"))
   queryItems <- var_fun_map[var_fun_map$name == var, "queries"][[1]]
 
+  # GCAM-USA: tolerate queries known to be absent in the GCAM-USA database
+  soft_queries <- if (grepl("USA", GCAM_version)) c("district heat production by subsector (fuel)") else c()
+
   it = 1; allOk = TRUE
   while (sum(is.na(queryItems)) == 0 & it <= as.numeric(length(queryItems)) & allOk) {
     qi <- var_fun_map[var_fun_map$name == var, "queries"][[1]][it]
     qi <- unlist(strsplit(qi, split = "|", fixed = TRUE))
-    allOk <- any(qi %in% rgcam::listQueries(prj))
+    allOk <- any(qi %in% rgcam::listQueries(prj)) || all(qi %in% soft_queries)
     it <- it + 1
   }
 
@@ -3703,7 +3706,7 @@ get_elec_gen_tech <- function(GCAM_version = "v7.1") {
   check_queries("secondary_energy_clean", GCAM_version)
   check_queries("secondary_energy_raw", GCAM_version)
 
-  # Branch: GCAM-USA uses a query with nested subsectors and cooling suffixes
+  # GCAM-USA uses a different query with nested subsectors and cooling suffixes
   if (grepl("USA", GCAM_version)) {
     elec_gen <- check_inf(rgcam::getQuery(prj, "elec gen by gen tech and cooling tech (incl cogen)"),
                           dataset_name = "elec gen by gen tech and cooling tech (incl cogen)")
@@ -3715,6 +3718,17 @@ get_elec_gen_tech <- function(GCAM_version = "v7.1") {
                           dataset_name = "elec gen by gen tech")
   }
 
+  # District heat is absent in GCAM-USA; return an empty tibble in that case
+  if ("district heat production by subsector (fuel)" %in% rgcam::listQueries(prj)) {
+    dh <- check_inf(rgcam::getQuery(prj, "district heat production by subsector (fuel)"),
+                    dataset_name = "district heat production by subsector (fuel)") %>%
+      dplyr::mutate(technology = subsector) %>%
+      dplyr::select(-output)
+  } else {
+    dh <- dplyr::tibble(scenario = character(), region = character(), sector = character(),
+                        subsector = character(), technology = character(), year = numeric(), value = numeric())
+  }
+
   secondary_energy_raw1 <- rbind(
     elec_gen,
     dplyr::bind_rows(
@@ -3722,10 +3736,7 @@ get_elec_gen_tech <- function(GCAM_version = "v7.1") {
                 dataset_name = "gas production by tech"),
       check_inf(rgcam::getQuery(prj, "hydrogen production by tech"),
                 dataset_name = "hydrogen production by tech"),
-      check_inf(rgcam::getQuery(prj, "district heat production by subsector (fuel)"),
-                dataset_name = "district heat production by subsector (fuel)") %>%
-        dplyr::mutate(technology = subsector) %>%
-        dplyr::select(-output),
+      dh,
       check_inf(rgcam::getQuery(prj, "refined liquids production by tech"),
                 dataset_name = "refined liquids production by tech") %>%
         dplyr::select(-output)
