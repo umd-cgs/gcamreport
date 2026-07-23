@@ -5905,7 +5905,8 @@ get_resource_investment <- function(GCAM_version = 'v8.2') {
 
   extraction2020 <-
     get(paste('investment',GCAM_version,sep='_'), envir = asNamespace("gcamreport")) %>%
-    dplyr::filter(Region == "World", Variable == "Extraction and Conversion - Fossil Fuels", year == base_year_p) %>%
+    # Use the nearest year to the final GCAM base year from the investment dataset
+    dplyr::filter(Region == "World", Variable == "Extraction and Conversion - Fossil Fuels", year == unique(year)[which.min(abs(unique(year) - base_year_p))] ) %>%
     dplyr::mutate(value = value * get(paste('convert',GCAM_version,sep='_'), envir = asNamespace("gcamreport"))[['conv_15USD_10USD']]) %>%
     dplyr::summarise(value = mean(value, na.rm = T)) %>%
     unlist()
